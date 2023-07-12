@@ -1,0 +1,5 @@
+{{ $color := .Get "color" | default "primary" }}
+<div class="message message-{{ $color }}">
+  {{ with "icon" }}<i class="modus-icons notranslate me-1" aria-hidden="true">{{ . | lower }}</i>{{ end }}
+  {{ .Inner | markdownify }}
+</div>

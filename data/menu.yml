@@ -1,13 +1,15 @@
-- title: Getting Started
+- title: Get Started
   prefix: ""
   pages:
     - title: Introduction
 
-- title: Features
+- title: Customization
   prefix: ""
   pages:
-    - title: Accessibility
-    - title: Was this page helpful?
+    - title: Adding Content
+    - title: Shortcodes
+    - title: Analytics
+    - title: Repository Links
 
 - title: Community
   pages:
