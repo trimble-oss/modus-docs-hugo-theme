@@ -1,5 +1,5 @@
 name: Report a bug
-description: Tell us about a bug or issue you may have identified in the Modus site.
+description: Tell us about a bug or issue you may have identified on the Modus Docs theme.
 title: "Provide a general summary of the issue"
 labels: [bug]
 body:
@@ -10,27 +10,3 @@ body:
       description: Provide a summary of the issue and what you expected to happen, including specific steps to reproduce.
     validations:
       required: true
-  - type: dropdown
-    id: os
-    attributes:
-      label: What operating system(s) are you seeing the problem on?
-      multiple: true
-      options:
-        - Windows
-        - macOS
-        - Android
-        - iOS
-        - Linux
-    validations:
-      required: true
-  - type: dropdown
-    id: browser
-    attributes:
-      label: What browser(s) are you seeing the problem on?
-      multiple: true
-      options:
-        - Chrome
-        - Safari
-        - Firefox
-        - Microsoft Edge
-        - Opera
