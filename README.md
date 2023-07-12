@@ -21,6 +21,10 @@ Status: Alpha. This theme is currently under development and is not yet ready fo
 ```yml
 module:
   mounts:
+    - source: node_modules/@trimble-oss/modus-docs-hugo-theme/assets/
+      target: assets
+      # The main theme CSS and JavaScript
+
     - source: node_modules/@trimble-oss/modus-docs-hugo-theme/layouts/
       target: layouts
       # The main theme templates
@@ -36,4 +40,4 @@ module:
     - source: node_modules/@trimble-oss/modus-icons/dist/modus-outlined/fonts/
       target: static/fonts/
       # Modus Icons Outlined will be available as webfont
-  ```
+```
