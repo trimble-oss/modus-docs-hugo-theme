@@ -1,0 +1,5 @@
+html[data-bs-theme="dark"] {
+  .dropdown-menu img {
+    filter: invert(1);
+  }
+}

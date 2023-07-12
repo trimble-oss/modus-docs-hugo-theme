@@ -1,0 +1,61 @@
+{
+  "version": "0.2",
+  "words": [
+    "affordance",
+    "Bohn",
+    "clickup",
+    "coliff",
+    "customizability",
+    "Delivr",
+    "dont",
+    "Kaukonen",
+    "Kause",
+    "Leuhof",
+    "linkify",
+    "listjs",
+    "markdownify",
+    "modus",
+    "monokai",
+    "Nowak",
+    "npmjs",
+    "plainify",
+    "pygments",
+    "rgba",
+    "Roboto",
+    "Segoe",
+    "Tahoma",
+    "tdewolff",
+    "Trimble",
+    "trimbleinc",
+    "uncategorized",
+    "WCAG"
+  ],
+  "allowCompoundWords": true,
+  "flagWords": [
+    "blacklist",
+    "card-block",
+    "grandfathered",
+    "grey",
+    "hte",
+    "whitelist"
+  ],
+  "language": "en,en-US",
+  "ignoreRegExpList": [
+    "<!-- prettier-ignore -->\\n(`{3,})\\w*\\n[\\s\\S]+?\\1",
+    "\\[(\\*{2})?@\\w+?\\1\\]",
+    "\\[`\\w+`\\]",
+    "\\/.*?\\/",
+    "\\_\\w+",
+    "\\#\\w+"
+  ],
+  "ignorePaths": [
+    ".cspell.json",
+    "**/node_modules/**",
+    "*.min.*",
+    "{coverage,dist,.cache,.git,.vscode,.DS_Store,tests}/**/*",
+    "*.{log,svg,snap}",
+    "tiger-teams.md",
+    ".terms.jsonc"
+  ],
+  "useGitignore": true
+}

@@ -1,0 +1,10 @@
+<p><img src="{{- .Get "src" -}}" class="{{.Get "class" }} img-fluid"
+    loading="{{- if .Get "loading" -}}auto{{ else }}lazy{{ end }}" {{if .Get "width" }} width="{{- .Get "width" -}}"
+    {{- end -}} {{if .Get "height" }} height="{{- .Get "height" -}}" {{- end -}} alt="{{- .Get "alt" -}}"></p>
+{{- if .Get "dark" -}}
+<style>
+  [data-bs-theme="dark"] img[src="{{- .Get "src" -}}"] {
+    content: url({{- .Get "dark" | lower -}});
+  }
+</style>
+{{- end -}}

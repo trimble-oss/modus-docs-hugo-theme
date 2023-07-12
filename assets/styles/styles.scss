@@ -1,0 +1,68 @@
+@import "theme-toggle";
+@import "theme-light";
+@import "theme-dark";
+@import "autocomplete"; // search autocomplete dropdown
+@import "article";
+@import "cards";
+@import "col-sidebar"; // 1st column
+@import "codefences"; // code syntax highlighting
+@import "javascript-disabled"; // display message at top if JS is disabled
+@import "list-js";
+@import "menu-left";
+@import "menu-right"; // 'On this page' menu
+@import "mobile"; // optimizations for xxs mobile screens
+@import "navbar";
+@import "navbar-search";
+@import "news";
+@import "posts";
+@import "print";
+@import "scroll-to-top-btn";
+@import "status";
+@import "skippy"; // skip to content accessibility
+@import "tables";
+@import "footer";
+@import "utilities";
+@import "was-this-page-helpful";
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+// underline links
+main a {
+  text-decoration: underline;
+}
+
+// don't underline links in buttons or navbar
+.menu-left a,
+.guide-example-block a,
+table a,
+nav a,
+.btn {
+  text-decoration: none;
+}
+
+.popover-body small {
+  line-height: 100%;
+}
+
+code {
+  font-size: inherit;
+}
+
+main {
+  min-height: 72vh;
+}
+
+.tooltip {
+  z-index: 3070 !important;
+}

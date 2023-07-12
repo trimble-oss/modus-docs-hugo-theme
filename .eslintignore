@@ -1,0 +1,8 @@
+*.min.js
+*.html
+*.json
+*.md
+
+node_modules/*
+public/*
+resources/*

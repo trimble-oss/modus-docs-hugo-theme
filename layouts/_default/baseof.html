@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-US" class="h-100 no-js {{ with .Page.Params.html_class }}{{ . -}}{{- end -}}">
+
+<head>
+  {{ partial "meta" . }}
+</head>
+
+<body data-url="{{ .RelPermalink }}" class="{{ with .Page.Params.body_class -}}{{ . -}}{{- end -}}"
+  {{ if not .Params.disableScrollSpy }}{{- end -}}>
+  {{ if not .Params.NavbarFalse }}{{ partial "navbar" . }}{{ end }}
+  {{ block "body" . }}{{ block "main" . }}
+  {{- end -}}
+  {{- end -}}
+  <script>
+    // Initialize Bootstrap tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl, {
+        trigger: 'hover'
+      });
+    });
+  </script>
+  <script>
+    // Hide Bootstrap tooltips when user presses Escape
+    document.addEventListener('keyup', function (event) {
+      if (event.which === 27) {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+          $(tooltipTriggerEl).tooltip('hide');
+        });
+      }
+    });
+  </script>
+  <script>
+    // Initialize Bootstrap popovers
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+  <script>
+    // Disable all links with #
+    var links = document.querySelectorAll('a[href="#"]');
+    // Add event listener to each link
+    links.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        // Prevent default behavior
+        event.preventDefault();
+      });
+    });
+  </script>
+  {{- if not .IsHome -}}
+  <script>
+    // Change Submit buttons within docs examples to type=button
+    var article = document.querySelector('article');
+    var forms = article.querySelectorAll('form');
+    forms.forEach(function (form) {
+      var submitButtons = form.querySelectorAll('button[type="submit"], input[type="submit"]');
+      submitButtons.forEach(function (submitButton) {
+        submitButton.type = 'button';
+      });
+    });
+  </script>
+  {{- end -}}
+  {{- if .Site.IsServer -}}
+
+  {{ end }}
+
+</body>
+
+</html>

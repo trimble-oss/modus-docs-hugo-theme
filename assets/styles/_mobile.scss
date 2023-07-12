@@ -1,0 +1,49 @@
+/* iPhone 6/7/8 */
+@media (max-width: 375px) {
+  #sidebar-menu {
+    min-width: 310px !important;
+  }
+
+  #sidebar.collapsing + div,
+  #sidebar.show + div {
+    display: none;
+  }
+}
+
+/* iPhone 6+/7+/8+ */
+@media (min-width: 376px) and (max-width: 414px) {
+  #sidebar-menu {
+    min-width: 345px !important;
+  }
+
+  #sidebar.collapsing + div,
+  #sidebar.show + div {
+    display: none;
+  }
+}
+
+/* XS */
+@media (max-width: 575px) {
+  #sidebar-menu {
+    max-width: 575px !important;
+    min-width: calc(100% - 62px) !important;
+    width: calc(100% - 62px) !important;
+  }
+  .col-main {
+    width: calc(100% - 62px) !important;
+  }
+
+  #sidebar.show {
+    width: calc(100% - 68px) !important;
+    min-width: calc(100% - 68px) !important;
+  }
+
+  #sidebar.show + div {
+    display: none !important;
+    width: 0;
+  }
+
+  .collapsing {
+    transition: none !important;
+  }
+}

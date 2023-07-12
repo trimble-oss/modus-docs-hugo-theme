@@ -1,0 +1,24 @@
+<div class="sticky-top sticky-offset">
+  {{ if and (gt .WordCount 200 ) (not .Params.hideToc) }}
+  <div class="h5 pt-2 ml-3 on-this-page">
+    On this page
+  </div>
+  {{- .TableOfContents -}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('#TableOfContents ul').forEach(function (ul) {
+        ul.classList.add('list-unstyled', 'pl-0', 'ml-0');
+      });
+      document.querySelectorAll('#TableOfContents a').forEach(function (a) {
+        a.classList.add('nav-link');
+      });
+    });
+  </script>
+
+  <hr class="opacity-25">
+  {{ end }}
+
+  {{- if not .Params.blog -}}
+  {{ partial "was-this-page-helpful.html" . }}
+  {{ end }}
+</div>

@@ -1,0 +1,18 @@
+[{{ range $index, $page := .Site.Pages }}
+{{ if not (in .Params.tags "search_exclude" ) }}
+{{ if not (in .Params.tags "accessibility" ) }}
+{{ if not (in .Params.tags "styles" ) }}
+{{- if ne $page.Type "json" -}}
+{{- if and $index (gt $index 0) -}},{{- end }}
+{
+  "uri": "{{- $page.Permalink -}}",
+  "title": "{{- htmlEscape $page.Title }} {{ if in .Params.tags "in-field" }}(In-Field){{end}}{{ if .Params.componentsWeb }}(Web){{end}}{{ if in .Params.tags "xr" }}(XR){{end}}{{ if in .Params.tags "mobile" }}(Mobile){{end}}",
+  "tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag| htmlEscape }}"{{ end }}],
+  "description": "{{- htmlEscape .Description -}}",
+  "content": {{- $page.Plain | jsonify -}}
+}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}]

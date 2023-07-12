@@ -1,0 +1,22 @@
+[data-bs-theme="dark"] {
+  .menu-right a[href^="http"]::after,
+  article a:not(.stretched-link)[href^="http"]::after {
+    filter: invert(1);
+  }
+
+  .card-blog-brief .card-header img {
+    filter: invert(1) brightness(111%);
+  }
+
+  .theme-d {
+    display: block;
+  }
+
+  span.theme-d {
+    display: inline-block;
+  }
+
+  .theme-l {
+    display: none !important;
+  }
+}

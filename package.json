@@ -1,0 +1,41 @@
+{
+  "name": "modus-docs-hugo-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Documentation heme for Hugo built by Trimble",
+  "homepage": "https://github.com/trimble-oss/modus-docs-hugo-theme",
+  "bugs": {
+    "url": "https://github.com/trimble-oss/modus-docs-hugo-theme/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trimble-oss/modus-docs-hugo-theme"
+  },
+  "license": "private",
+  "author": "Trimble",
+  "scripts": {
+    "build": "npx hugo",
+    "lint": "npm run lint-css && npm run lint-html",
+    "lint-css": "stylelint \"static/css/*.*\" --fix",
+    "lint-html": "htmlhint \"build/**/index.html\"",
+    "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
+    "prettier": "prettier --write \"**/*.{json,js,md,svg}\"",
+    "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged"
+  },
+  "dependencies": {
+    "@trimble-oss/modus-icons": "1.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.14",
+    "htmlhint": "1.1.4",
+    "hugo-bin": "0.111.2",
+    "postcss": "8.4.25",
+    "postcss-cli": "10.1.0",
+    "prettier": "3.0.0",
+    "stylelint": "15.10.1",
+    "stylelint-config-standard-scss": "10.0.0"
+  },
+  "hugo-bin": {
+    "buildTags": "extended"
+  }
+}

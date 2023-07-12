@@ -1,0 +1,58 @@
+.card-blog-brief {
+  transition: none;
+}
+
+#sidebar-menu {
+  max-height: calc(100vh - 66px);
+}
+
+@media (min-width: 576px) {
+  #sidebar-menu {
+    max-width: 250px;
+    min-width: 250px;
+  }
+}
+
+#sidebar a:hover {
+  color: #000 !important;
+}
+
+[data-bs-theme="dark"] {
+  #sidebar a:hover {
+    color: #fff !important;
+  }
+}
+
+#sidebar.collapsing .sticky-offset {
+  top: 0 !important;
+}
+
+#sidebar.show .sticky-offset {
+  top: 65px !important;
+}
+
+.col-main {
+  max-width: calc(100vw - 82px);
+}
+
+.collapse-horizontal.collapse:not(.show) {
+  width: 0;
+}
+
+.row-main {
+  min-height: calc(100vh - 66px);
+}
+
+#sidebar-menu {
+  max-width: 250px;
+  min-width: 250px;
+}
+
+#sidebar.collapsing + div,
+#sidebar.show + div {
+  max-width: calc(100vw - 332px);
+}
+
+.col-sidebar .sticky-offset {
+  top: 65px !important;
+}

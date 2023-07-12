@@ -1,0 +1,111 @@
+// anchors # for deep links within docs
+.header-link {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s all;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link {
+  opacity: 0.6;
+  pointer-events: visible;
+  transition: 0.3s all;
+}
+
+// title of article shouldn't have margin-top
+main article h2.h1:first-of-type {
+  margin-top: 0 !important;
+}
+
+header {
+  background-image: radial-gradient(circle, rgba(131, 131, 131, 0.3) 1px, transparent 1px);
+  background-size: 1rem 1rem;
+  min-height: 230px;
+}
+
+// external links have an icon
+.menu-right a[href^="http"]::after,
+article a:not(.stretched-link)[href^="https"]::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  margin-bottom: -1px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.78 19.78H4.22V4.22h6.67c.61 0 1.11-.5 1.11-1.11C12 2.5 11.5 2 10.89 2H3c-.55 0-1 .45-1 1v18c0 .55.45 1 1 1h18c.55 0 1-.45 1-1v-7.89c0-.61-.5-1.11-1.11-1.11-.61 0-1.11.5-1.11 1.11v6.67ZM14.22 3.11c0 .61.5 1.11 1.11 1.11h2.88L8.07 14.36c-.43.43-.43 1.13 0 1.57.43.43 1.13.43 1.57 0L19.78 5.79v2.88c0 .61.5 1.11 1.11 1.11.61 0 1.11-.5 1.11-1.11V3c0-.55-.45-1-1-1h-5.67c-.61 0-1.11.5-1.11 1.11Z'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+main .sticky-offset {
+  top: 80px !important;
+}
+
+// offsets the anchors to adjust for the fixed navbar
+article h2:target::before,
+article h3:target::before {
+  display: block;
+  content: " ";
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+#main::before {
+  display: block;
+  content: " ";
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+  top: 80px;
+}
+
+// anchors # for deep links within docs
+a.header-link {
+  opacity: 0;
+  pointer-events: none;
+}
+
+a.header-link::after {
+  content: "#";
+  min-width: 20px;
+  display: inline-block;
+}
+
+.docs-callout {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #eee;
+  border-left-width: 0.25rem !important;
+  border-radius: 0.25rem;
+}
+
+.docs-callout-danger {
+  border-left-color: #c81922;
+}
+
+.docs-callout-warning {
+  border-left-color: #ffa500 !important;
+}
+
+.docs-callout-info {
+  border-left-color: #cfe1ee !important;
+}
+
+// fix bug where popovers appear over the navbar
+.popover {
+  z-index: 1020 !important;
+}
+
+kbd {
+  opacity: 0.7;
+}
+
+article .nav-tabs .nav-link::after {
+  background-image: none !important;
+  width: 0 !important;
+}

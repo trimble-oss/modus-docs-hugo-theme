@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{- if .IsHome -}}{{- .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title -}}{{- end -}}</title>
+<script>document.documentElement.classList.remove('no-js');</script>
+<!-- Faster Loading Google Fonts - https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/ -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://modus-bootstrap.netlify.app/docs/5.3/dist/css/modus-bootstrap.min.css">
+
+<!-- Compiles and minifies the sites Sass files from /assets/css/ -->
+{{- $sassOptions := (dict "enableSourceMap" true) -}}
+{{ $styles := resources.Get "styles/styles.scss" | toCSS $sassOptions | postCSS | minify }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}?v{{ hugo.Version }}">
+
+<!-- Load jQuery from CDN with fallback -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.0.min.js"><\/script>');</script>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}fonts/modus-icons.css">
+
+<script src="{{ .Site.BaseURL }}js/theme-toggle.js"></script>
+
+<meta name="description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{- end -}}{{- end -}}">
+
+<!-- OpenGraph Meta tags using Hugo's own built-in template -->
+{{ template "_internal/opengraph.html" . }}
+<meta property="og:locale" content="en_US">
+
+<!-- no need to define additional Twitter card meta tags as fallback to Open Graph -->
+<!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#twitter-cards-and-open-graph -->
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="alternate icon" type="image/x-icon" href="{{ .Site.BaseURL }}favicon.ico">
+<link rel="icon" type="image/svg+xml" href="{{ .Site.BaseURL }}favicon.svg">
+
+<!-- Polyfills for Internet Explorer 11 -->
+<script nomodule crossorigin="anonymous"
+  src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"></script>
+<script
+  nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.0/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script>');</script>
+
+{{- if not .Params.hideSearch -}}
+<script>
+  var baseurl = "{{.Site.BaseURL}}";
+</script>
+
+<!-- Combines and minifies the 3x JS files which are used for the Search -->
+{{ $autocomplete := resources.Get "js/auto-complete.min.js" }}
+{{ $lunr := resources.Get "js/lunr.min.js" }}
+{{ $search := resources.Get "js/search.min.js" }}
+{{ $js := slice $autocomplete $lunr $search | resources.Concat "js/search.js" | resources.Minify }}
+<script src="{{ $js.RelPermalink }}" fetchpriority="low"></script>
+{{- end -}}
+{{ if .IsHome }}
+{{ hugo.Generator }}
+{{ end }}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

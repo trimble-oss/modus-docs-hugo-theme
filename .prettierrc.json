@@ -1,0 +1,21 @@
+{
+  "bracketSameLine": true,
+  "printWidth": 280,
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "printWidth": 140,
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "*.svg",
+      "options": {
+        "printWidth": 5000,
+        "bracketSameLine": true,
+        "parser": "html"
+      }
+    }
+  ]
+}

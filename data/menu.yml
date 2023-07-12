@@ -1,0 +1,16 @@
+- title: Getting Started
+  prefix: ""
+  pages:
+    - title: Introduction
+
+- title: Features
+  prefix: ""
+  pages:
+    - title: Accessibility
+    - title: Was this page helpful?
+
+- title: Community
+  pages:
+    - title: GitHub Discussions
+      url: "https://github.com/orgs/trimble-oss/discussions"
+      external: true
