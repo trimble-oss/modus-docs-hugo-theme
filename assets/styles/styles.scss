@@ -7,7 +7,7 @@
 @import "col-sidebar"; // 1st column
 @import "codefences"; // code syntax highlighting
 @import "javascript-disabled"; // display message at top if JS is disabled
-@import "list-js";
+// @import "list-js";
 @import "menu-left";
 @import "menu-right"; // 'On this page' menu
 @import "mobile"; // optimizations for xxs mobile screens
@@ -17,12 +17,12 @@
 @import "posts";
 @import "print";
 @import "scroll-to-top-btn";
-@import "status";
 @import "skippy"; // skip to content accessibility
 @import "tables";
 @import "footer";
 @import "utilities";
 @import "was-this-page-helpful";
+// @import "xxl"; // extra extra large screens
 
 body {
   overflow-x: hidden;
@@ -61,8 +61,4 @@ code {
 
 main {
   min-height: 72vh;
-}
-
-.tooltip {
-  z-index: 3070 !important;
 }

@@ -1,5 +1,7 @@
 {{ $color := .Get "color" | default "primary" }}
-<div class="message message-{{ $color }}">
-  {{ with "icon" }}<i class="modus-icons notranslate me-1" aria-hidden="true">{{ . | lower }}</i>{{ end }}
-  {{ .Inner | markdownify }}
+{{ $icon := .Get "icon" | default "info" }}
+<div class="message message-{{ $color }} align-items-center">
+  {{- with .Get "icon" -}}<i class="modus-icons small notranslate me-2"
+    aria-hidden="true">{{- . | safeHTML | lower -}}</i>{{ end }}
+  {{- .Inner | markdownify -}}
 </div>
