@@ -1,9 +1,6 @@
 ---
 title: "Community"
 layout: "single"
-description: "Creating a culture of collaboration and knowledge-sharing."
+description: ""
 community: true
-displayBlogPosts: true
-url: "/community/"
-hideDate: true
 ---

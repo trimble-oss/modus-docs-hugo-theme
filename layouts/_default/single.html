@@ -60,8 +60,11 @@
               </div>
               <div class="col-6">
                 {{- if not .Params.blog -}}
-                <a class="btn btn-sm btn-outline-secondary mt-5 float-end" href=""
+                {{- if site.Params.GitHubRepo -}}
+                <a class="btn btn-sm btn-outline-secondary mt-5 float-end"
+                  href="{{- site.Params.GitHubRepo -}}/tree/main/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
                   title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+                {{ end }}
                 {{ end }}
                 {{- if .Params.blog -}}
                 {{ partial "blog-share" . }}
