@@ -6,7 +6,7 @@
   max-height: calc(100vh - 66px);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #sidebar-menu {
     max-width: 250px;
     min-width: 250px;
@@ -27,12 +27,22 @@
   top: 0 !important;
 }
 
+#sidebar.collapsing.collapse-horizontal {
+  height: unset !important;
+}
+
+#sidebar.show {
+  min-width: 250px;
+}
+
 #sidebar.show .sticky-offset {
   top: 65px !important;
 }
 
-.col-main {
-  max-width: calc(100vw - 82px);
+@media (max-width: 1399px) {
+  .col-main {
+    max-width: calc(100vw - 81px);
+  }
 }
 
 .collapse-horizontal.collapse:not(.show) {
@@ -40,12 +50,7 @@
 }
 
 .row-main {
-  min-height: calc(100vh - 66px);
-}
-
-#sidebar-menu {
-  max-width: 250px;
-  min-width: 250px;
+  height: calc(100dvh - 66px);
 }
 
 #sidebar.collapsing + div,

@@ -11,12 +11,13 @@
     div.classList.add('show');
   }
 </script>
+
 <!-- https://github.com/twbs/bootstrap/blob/v5.3.0/site/layouts/partials/docs-sidebar.html -->
 <div class="">
   {{- $url := split .Permalink "/" -}}
   {{- $page_slug := index $url (sub (len $url) 2) -}}
 
-  <div class="accordion accordion-flush menu-left">
+  <div class="accordion accordion-flush menu-left overflow-x-hidden overflow-y-hidden">
     {{- range $group := .Site.Data.menu -}}
     {{- $link := $group.title -}}
     {{- $link_slug := $link | urlize -}}
@@ -49,8 +50,10 @@
             {{- $doc_slug := $doc.title | urlize -}}
             {{- $is_active := and $is_active_group (eq $page_slug $doc_slug) -}}
             {{- $href := printf "/%s/%s/" $group_slug $doc_slug }}
-            <li class="my-1"><a href="{{ $href }}" class="nav-link text-body{{ if $is_active }} active fw-bold{{ end }}"
-                {{ if $is_active }} aria-current="page" {{- end -}}>{{- $doc.title -}}</a></li>
+            <li class="my-1">
+              <a href="{{ $href }}" class="nav-link text-body{{ if $is_active }} active fw-bold{{ end }}"
+                {{ if $is_active }} aria-current="page" {{- end -}}>{{- $doc.title -}}</a>
+            </li>
             {{- end }}
           </ul>
         </div>

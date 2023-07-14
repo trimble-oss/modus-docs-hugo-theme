@@ -10,17 +10,14 @@ Each page should have the minimum front matter:
 ```yml
 ---
 title: "Page Title"
-layout: "single"
+group: "" # The group the page belongs to in the menu
 description: "A brief description of the page"
 ---
 ```
 
 You can also specify additional front matter variables:
 
-- `date` - The date the page was published
-- `lastmod` - The date the page was last modified
 - `draft` - Set to `true` to hide the page from the site
-- `group` - The group the page belongs to in the menu
 - `aliases` - A list of aliases for the page
 - `toc` - Set to `false` to hide the table of contents
 
@@ -41,3 +38,11 @@ For more control over images you can use a shortcode as follows:
 ```
 
 This allows you to specify a dark mode image, height, width a class and an alt tag.
+
+## iframe
+
+You can embed an iframe using the following shortcode:
+
+```markdown
+{{ < iframe src="" height="200" class="w-100" >}}
+```

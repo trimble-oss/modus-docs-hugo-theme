@@ -5,7 +5,7 @@
   {{ partial "meta" . }}
 </head>
 
-<body data-url="{{ .RelPermalink }}" class="{{ with .Page.Params.body_class -}}{{ . -}}{{- end -}}"
+<body data-url="{{ .RelPermalink }}" class="overflow-x-hidden {{ with .Page.Params.body_class -}}{{ . -}}{{- end -}}"
   {{ if not .Params.disableScrollSpy }}{{- end -}}>
   {{ if not .Params.NavbarFalse }}{{ partial "navbar" . }}{{ end }}
   {{ block "body" . }}{{ block "main" . }}

@@ -34,29 +34,47 @@ This is a message.
 ## Tabbed panes
 
 {{< tabpane text=true >}}
-{{% tab header="TypeScript" %}}
+{{< tab header="TypeScript" >}}
 TypeScript is great!
-{{% /tab %}}
+{{< /tab >}}
 {{< tab header="Swift" >}}
 Swift is awesome!
 {{< /tab >}}
-{{% tab header="React" %}}
+{{< tab header="React" >}}
 React is wonderful!
-{{% /tab %}}
+{{< /tab >}}
 {{< /tabpane >}}
 
 <br><br>
 
 ```go-html-template
 {{</* tabpane text=true */>}}
-{{%/* tab header="TypeScript" */%}}
+{{</* tab header="TypeScript" */>}}
 TypeScript is great!
-{{%/* /tab */%}}
+{{</* /tab */>}}
 {{</* tab header="Swift" */>}}
 Swift is awesome!
-{{</* /tab */%}}
-{{%/* tab header="React" */%}}
+{{</* /tab */>}}
+{{</* tab header="React" */>}}
 React is wonderful!
-{{%/* /tab */%}}
+{{</* /tab */>}}
 {{</* /tabpane */>}}
 ```
+
+## Code Examples
+
+{{< example lang="go-html-template" show_preview="false" >}}
+
+{{</* tabpane text=true */>}}
+{{</* tab header="TypeScript" */>}}
+TypeScript is great!
+{{</* /tab */>}}
+{{</* tab header="Swift" */>}}
+Swift is awesome!
+{{</* /tab */>}}
+{{</* tab header="React" */>}}
+React is wonderful!
+{{</* /tab */>}}
+{{</* /tabpane */>}}
+
+{{< /example >}}

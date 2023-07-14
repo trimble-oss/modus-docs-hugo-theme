@@ -7,15 +7,15 @@
       {{ partial "col-sidebar" . }}
     </div>
 
-    <div class="col col-auto px-0 collapse collapse-horizontal bg-dark bg-opacity-10" id="sidebar">
-      <div id="sidebar-menu" class="sticky-top sticky-offset shadow-sm overflow-auto">
+    <div class="col col-auto px-0 collapse collapse-horizontal bg-dark bg-opacity-10 d-xxl-block" id="sidebar">
+      <div id="sidebar-menu" class="z-2 sticky-top sticky-offset shadow-sm overflow-auto w-100">
         {{ partial "col-sidebar-menu" . }}
       </div>
     </div>
 
-    <div class="col col-auto col-12 col-main border-start p-0">
+    <div class="col col-auto col-12 col-main border-start p-0 overflow-y-hidden">
 
-      <main id="main">
+      <main id="main" class="w-100 h-100">
 
         <header class="bg-secondary-subtle bg-opacity-10">
           <div class="container-fluid pt-5">
