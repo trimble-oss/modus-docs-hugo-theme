@@ -1,5 +1,6 @@
 ---
 title: "Adding Content"
+group: "customization"
 description: ""
 ---
 

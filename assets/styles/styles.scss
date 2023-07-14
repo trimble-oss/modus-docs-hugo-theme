@@ -6,9 +6,10 @@
 @import "cards";
 @import "col-sidebar"; // 1st column
 @import "codefences"; // code syntax highlighting
+@import "codefences-dark"; // code syntax highlighting
 @import "javascript-disabled"; // display message at top if JS is disabled
 // @import "list-js";
-@import "menu-left";
+@import "sidebar";
 @import "menu-right"; // 'On this page' menu
 @import "mobile"; // optimizations for xxs mobile screens
 @import "navbar";
