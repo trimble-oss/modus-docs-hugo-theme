@@ -39,10 +39,8 @@
   top: 65px !important;
 }
 
-@media (max-width: 1399px) {
-  .col-main {
-    max-width: calc(100vw - 81px);
-  }
+.col-main {
+  max-width: calc(100vw - 81px);
 }
 
 .collapse-horizontal.collapse:not(.show) {
@@ -51,6 +49,10 @@
 
 .row-main {
   height: calc(100dvh - 66px);
+}
+
+#sidebar.collapsing {
+  transition: none;
 }
 
 #sidebar.collapsing + div,

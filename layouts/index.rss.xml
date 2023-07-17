@@ -9,16 +9,16 @@
       <language>{{.}}</language>
     {{- end}}
     {{- with .Site.Params.copyrightHolderEmail }}
-      <managingEditor>{{.}} ({{ $.Site.Params.copyrightHolder }})</managingEditor>
+      <managingEditor>{{.}} ({{- $.Site.Params.copyrightHolder -}})</managingEditor>
     {{- end}}
     {{- with .Site.Params.copyrightHolderEmail }}
-      <webMaster>{{.}} ({{ $.Site.Params.copyrightHolder }})</webMaster>
+      <webMaster>{{.}} ({{- $.Site.Params.copyrightHolder -}})</webMaster>
     {{- end}}
     {{- with .Site.Params.docsUrlForRssV2}}
       <docs>{{- . -}}</docs>
     {{- end }}
     {{- if not .Date.IsZero }}
-      <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+      <lastBuildDate>{{- .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML -}}</lastBuildDate>
     {{- end }}
     {{ with .OutputFormats.Get "RSS" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
@@ -31,7 +31,7 @@
       {{ with $.Site.Params.copyrightHolderEmail }}<author>{{.}} ({{ with $.Site.Params.copyrightHolder }}{{.}}){{end}}</author>{{end}}
       <guid isPermaLink="true">{{ .Permalink }}</guid>
       {{- range .Params.tags }}
-        <category>{{ . | urlize }}</category>
+        <category>{{- . | urlize -}}</category>
       {{- end }}
       <description>
         {{- with .Params.headline }}&lt;h2&gt;{{ . }}&lt;/h2&gt;{{- end }}
@@ -42,7 +42,7 @@
         {{- end }}
         {{ .Content | html }}
       </description>
-      <source url="{{ .Site.BaseURL }}index.xml">{{- .Site.Title -}}</source>
+      <source url="{{- .Site.BaseURL -}}index.xml">{{- .Site.Title -}}</source>
     </item>
     {{ end }}
   </channel>
