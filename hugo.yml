@@ -12,6 +12,7 @@ params:
   author: "Trimble"
   copyrightHolder: "Trimble Inc."
   GitHubRepo: "https://github.com/trimble-oss/modus-docs-hugo-theme"
+  themeColor: "#005f9e"
 
 disableKinds: ["sitemap", "taxonomy", "taxonomyTerm"]
 pygmentsUseClasses: true

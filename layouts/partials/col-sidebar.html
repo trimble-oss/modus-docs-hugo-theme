@@ -1,6 +1,6 @@
 <div
   class="list-group d-block border-0 text-center sticky-top sticky-offset d-flex flex-column align-items-start justify-content-between"
-  style="height: calc(100vh - 66px)">
+  style="height: calc(100dvh - 66px)">
 
   <button class="list-group-item border-0 mt-2" type="button" data-bs-target="#sidebar" data-bs-toggle="collapse"
     aria-label="Expand Menu">
@@ -11,6 +11,16 @@
     </div>
   </button>
 
-  {{ partial "theme-toggle" . }}
+  <div>
+    {{- with .Site.Params.GitHubRepo -}}
+    <a href="{{- . -}}" class="btn btn-lg btn-icon-only border-0 mx-1" target="_blank" rel="noopener"
+      data-bs-toggle="tooltip" title="GitHub">
+      {{ partial "icons/fa/brands/github.svg" (dict "class" "text-dark mt-2" "width" "22" "height" "22") }}
+    </a>
+    {{ end }}
+
+    {{ partial "btn-theme-toggle" . }}
+  </div>
+
 
 </div>

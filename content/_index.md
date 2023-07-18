@@ -3,13 +3,13 @@ title: "Home"
 layout: "home"
 ---
 
-{{< blocks/cover title="Modus Mobile Components" image_anchor="center" height="full" color="primary" >}}
+{{< blocks/cover title="Modus Docs Theme for Hugo" image_anchor="center" height="full" color="primary" >}}
 
 <div class="mx-auto">
   <a class="btn btn-lg btn-primary me-3 mb-4" href="/get-started/introduction/">
     Get Started
   </a>
-  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com" target="_blank">
+  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/trimble-oss/modus-docs-hugo-theme" target="_blank" rel="noopener">
     Contribute
   </a>
 </div>
