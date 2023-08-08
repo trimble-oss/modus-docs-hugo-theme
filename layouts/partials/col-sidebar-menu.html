@@ -43,7 +43,7 @@
       </h6>
 
       <div id="flush-collapse-{{- $group.title | urlize -}}"
-        class="accordion-collapse collapse {{ if $is_active_group }}show{{ end }}">
+        class="accordion-collapse collapse {{ if $is_active_group }} show{{ end }} {{ if site.Params.expandAllAccordions }}show{{- end -}}">
         <div class="accordion-body py-1 bg-secondary bg-opacity-10">
           <ul class="list-unstyled">
             {{- range $doc := $group.pages -}}
