@@ -1,12 +1,5 @@
-.table-whats-new th:first-of-type {
-  max-width: 79px;
-  width: 79px;
-}
-
-.table-whats-new th {
-  background-color: rgba(133, 133, 133, 0.1);
-}
-
-.table.table-bordered thead {
-  background-color: rgba(133, 133, 133, 0.1);
+main table {
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
 }
