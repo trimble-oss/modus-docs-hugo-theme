@@ -28,7 +28,7 @@
   "devDependencies": {
     "autoprefixer": "10.4.14",
     "htmlhint": "1.1.4",
-    "hugo-bin": "0.111.4",
+    "hugo-bin": "0.113.0",
     "postcss": "8.4.27",
     "postcss-cli": "10.1.0",
     "prettier": "3.0.1",
