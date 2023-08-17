@@ -26,12 +26,12 @@
     "@trimble-oss/modus-icons": "1.4.0"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.14",
+    "autoprefixer": "10.4.15",
     "htmlhint": "1.1.4",
     "hugo-bin": "0.113.0",
-    "postcss": "8.4.27",
+    "postcss": "8.4.28",
     "postcss-cli": "10.1.0",
-    "prettier": "3.0.1",
+    "prettier": "3.0.2",
     "stylelint": "15.10.2",
     "stylelint-config-standard-scss": "10.0.0"
   },
