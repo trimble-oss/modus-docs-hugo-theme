@@ -37,5 +37,11 @@
   },
   "hugo-bin": {
     "buildTags": "extended"
-  }
+  },
+  "files": [
+    "assets",
+    "data",
+    "layouts",
+    "static"
+  ]
 }
