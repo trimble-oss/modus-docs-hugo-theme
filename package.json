@@ -16,11 +16,12 @@
   "scripts": {
     "build": "npx hugo",
     "lint": "npm run lint-css && npm run lint-html",
-    "lint-css": "stylelint \"static/css/*.*\" --fix",
+    "lint-css": "stylelint \"assets/styles/*.*\" --fix",
     "lint-html": "htmlhint \"build/**/index.html\"",
     "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
     "prettier": "prettier --write \"**/*.{json,js,md,svg}\"",
-    "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged"
+    "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged",
+    "test": "npm run lint-css && npm run lint-html"
   },
   "dependencies": {
     "@trimble-oss/modus-icons": "1.4.0"

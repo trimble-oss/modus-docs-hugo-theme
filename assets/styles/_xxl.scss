@@ -3,12 +3,15 @@
   nav button .menu-btn {
     opacity: 0.1;
   }
+
   button[data-bs-target="#sidebar"] {
     pointer-events: none !important;
   }
+
   #sidebar.show {
     pointer-events: auto !important;
   }
+
   #sidebar {
     width: 250px !important;
   }

@@ -4,6 +4,8 @@
     "alpha-value-notation": null,
     "color-function-notation": null,
     "media-feature-range-notation": null,
-    "selector-anb-no-unmatchable": null
+    "no-descending-specificity": null,
+    "selector-anb-no-unmatchable": null,
+    "selector-id-pattern": null
   }
 }

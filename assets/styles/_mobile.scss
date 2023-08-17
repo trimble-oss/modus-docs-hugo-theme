@@ -22,21 +22,12 @@
   }
 }
 
-/* XS */
+/* XS */ /* stylelint-disable-next-line */
 @media (max-width: 575px) {
 }
 
 /* SM */
 @media (max-width: 767px) {
-  #sidebar-menu {
-    // min-width: calc(100% - 64px);
-    // width: calc(100% - 64px);
-  }
-  .col-main {
-    // width: calc(100vw - 62px);
-    // max-width: calc(100vw - 64px);
-  }
-
   #sidebar.show {
     width: calc(100% - 68px) !important;
     min-width: calc(100% - 68px) !important;
