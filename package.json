@@ -1,7 +1,6 @@
 {
   "name": "modus-docs-hugo-theme",
   "version": "1.0.0-alpha1",
-  "private": true,
   "description": "A Documentation heme for Hugo built by Trimble",
   "homepage": "https://github.com/trimble-oss/modus-docs-hugo-theme",
   "bugs": {
