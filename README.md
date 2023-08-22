@@ -8,12 +8,8 @@ Status: Alpha. This theme is currently under development and is not yet ready fo
 
 1. Add this repo to your package.json as follows:
 
-```json
-{
-  "dependencies": {
-    "modus-docs-hugo-theme": "git+github.com:trimble-oss/modus-docs-hugo-theme.git"
-  }
-}
+```bash
+npm i @trimble-oss/modus-docs-hugo-theme --save-dev
 ```
 
 2. Add the following mounts to your Hugo config:
