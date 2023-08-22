@@ -10,8 +10,10 @@
           {{ end }}
         </div>
         <div class="col-9 align-self-center">
-          {{- .title }} <img src="/img/icons/external-link.svg" class="filter-greyscale opacity-50" height="14"
-            width="14" alt="">
+          {{- .title }}
+          <svg class="filter-greyscale opacity-50" width="14" height="14" fill="currentColor">
+            <use xlink:href="/modus-solid-icons.svg#external-link" />
+          </svg>
         </div>
       </div>
     </a>
