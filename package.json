@@ -1,6 +1,6 @@
 {
   "name": "@trimble-oss/modus-docs-hugo-theme",
-  "version": "1.0.0-alpha1",
+  "version": "1.0.0-alpha2",
   "description": "A Documentation theme for Hugo built by Trimble",
   "homepage": "https://github.com/trimble-oss/modus-docs-hugo-theme",
   "bugs": {
@@ -14,19 +14,22 @@
   "author": "Trimble",
   "scripts": {
     "build": "npx hugo",
-    "lint": "npm run lint-css && npm run lint-html",
+    "lint": "npm run lint-css && npm run lint-html && npm run lint-js",
     "lint-css": "stylelint \"assets/styles/*.*\" --fix",
     "lint-html": "htmlhint \"build/**/index.html\"",
+    "lint-js": "eslint assets/js/*.js --fix",
     "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
     "prettier": "prettier --write \"**/*.{json,js,md,svg}\"",
     "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged",
-    "test": "npm run lint-css && npm run lint-html"
+    "test": "npm run lint-css && npm run lint-html && npm run lint-js "
   },
   "dependencies": {
     "@trimble-oss/modus-icons": "1.4.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.15",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
     "htmlhint": "1.1.4",
     "hugo-bin": "0.113.0",
     "postcss": "8.4.28",
