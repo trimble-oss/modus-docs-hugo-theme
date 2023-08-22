@@ -5,7 +5,7 @@
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2016,
+    "ecmaVersion": 2020,
     "sourceType": "script"
   },
   "extends": ["eslint:recommended"],
