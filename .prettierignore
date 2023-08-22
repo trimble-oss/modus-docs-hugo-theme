@@ -1,6 +1,7 @@
 build/
 layouts/
 resources/
+static/
 
 .*
 .vscode\extensions.json

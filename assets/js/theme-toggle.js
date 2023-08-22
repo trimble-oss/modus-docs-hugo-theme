@@ -1,3 +1,4 @@
+// script adapted from Adam Argyle's tutorial: https://web.dev/building-a-theme-switch-component/
 (() => {
   'use strict';
 

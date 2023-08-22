@@ -18,10 +18,11 @@
     "lint-css": "stylelint \"assets/styles/*.*\" --fix",
     "lint-html": "htmlhint \"build/**/index.html\"",
     "lint-js": "eslint assets/js/*.js --fix",
+    "lint-links": "npx linkinator content/ --recurse --silent --skip \"^(?!http://localhost)\"",
     "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
     "prettier": "prettier --write \"**/*.{json,js,md,svg}\"",
     "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged",
-    "test": "npm run lint-css && npm run lint-html && npm run lint-js "
+    "test": "npm run lint-css && npm run lint-html && npm run lint-js"
   },
   "dependencies": {
     "@trimble-oss/modus-icons": "1.4.0"
