@@ -16,7 +16,7 @@ params:
   themeColor: "#005f9e"
   expandAllAccordions: true
 
-disableKinds: ["sitemap", "taxonomy", "taxonomyTerm"]
+disableKinds: ["sitemap", "taxonomy"]
 pygmentsUseClasses: true
 outputs:
   home: ["HTML", "JSON"]
