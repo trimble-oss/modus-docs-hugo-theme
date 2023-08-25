@@ -2,19 +2,22 @@
   class="list-group d-block border-0 text-center sticky-top sticky-offset d-flex flex-column align-items-start justify-content-between"
   style="height: calc(100dvh - 66px)">
 
-  <button class="list-group-item border-0 mt-2" type="button" data-bs-target="#sidebar" data-bs-toggle="collapse"
-    aria-label="Expand Menu">
-    <div class="ms-1 text-body">
-      <svg width="24" height="24" fill="currentColor">
-        <use xlink:href="/modus-icons.svg#user-guide" />
-      </svg>
-    </div>
-  </button>
+  <div class="text-center mx-auto w-100">
+    <button class="btn btn-lg btn-outline-secondary bg-transparent list-group-item border-0 mt-1" type="button"
+      data-bs-target="#sidebar" data-bs-toggle="collapse" aria-label="Expand Menu"
+      style="width:48px; margin-left: 6px;">
+      <div class="text-body text-center">
+        <svg width="24" height="24" fill="currentColor">
+          <use xlink:href="/modus-icons.svg#user-guide" />
+        </svg>
+      </div>
+    </button>
+  </div>
 
   <div>
     {{- with .Site.Params.GitHubRepo -}}
-    <a href="{{- . -}}" class="btn btn-lg btn-icon-only border-0 mx-1" target="_blank" rel="noopener"
-      data-bs-toggle="tooltip" title="GitHub">
+    <a href="{{- . -}}" class="btn btn-lg btn-outline-secondary bg-transparent btn-icon-only border-0 mx-1"
+      target="_blank" rel="noopener" data-bs-toggle="tooltip" title="GitHub">
       {{ partial "icons/brands/github.svg" (dict "class" "mt-2" "width" "22" "height" "22") }}
     </a>
     {{ end }}
