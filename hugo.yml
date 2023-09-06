@@ -4,8 +4,8 @@ languageCode: en-US
 locale: en-US
 
 enableInlineShortcodes: true
-#enableGitInfo: true # Needed to show Last updated date on pages
-googleAnalytics: "" # Optional - Google Analytics tracking ID
+# enableGitInfo: true # Needed to show Last updated date on pages
+# googleAnalytics: "G-MEASUREMENT_ID" # Optional - Google Analytics tracking ID
 
 params:
   title: Modus Docs Theme for Hugo
@@ -13,6 +13,7 @@ params:
   copyrightHolder: "Trimble Inc."
   GitHubRepo: "https://github.com/trimble-oss/modus-docs-hugo-theme"
   # googleSiteVerification: "" # Optional - Google Search Console verification code
+  # PlausibleAnalyticsDomain: "" # Optional - Plausible Analytics domain e.g. example.com
   themeColor: "#005f9e"
   expandAllAccordions: true
 
