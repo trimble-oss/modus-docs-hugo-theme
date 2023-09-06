@@ -16,6 +16,8 @@ Then add a few dev dependencies you'll need to build your site:
 npm i -D autoprefixer hugo-bin postcss postcss-cli
 ```
 
+<br>
+
 ## Setup Menu
 
 The left-side menu is generated from a `menu.yml` file in the data directory. The menu is a list of sections, each with a title and a list of pages. Each page has a title. The URL matches the title. For example, a page with the title "Introduction" within the components section will have the URL `/components/introduction/`.

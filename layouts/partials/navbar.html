@@ -10,6 +10,11 @@
           class="img-fluid d-none d-sm-inline-block" alt="home" />
         <img src="https://modus-bootstrap.trimble.com/img/trimble-icon-rev.svg"
           class="d-inline-block d-sm-none px-1 mt-1" height="25" width="25" alt="home" />
+        {{- if .Site.Params.Title -}}
+        <div class="float-end text-white h2 d-none d-md-inline-block" style="margin-top: 12px;">
+          {{- .Site.Title -}}
+        </div>
+        {{- end -}}
       </a>
     </div>
 
