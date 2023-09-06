@@ -37,6 +37,8 @@
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   </script>
+
+  {{- if not .IsHome -}}
   <script>
     // Disable all links with #
     var links = document.querySelectorAll('a[href="#"]');
@@ -48,7 +50,6 @@
       });
     });
   </script>
-  {{- if not .IsHome -}}
   <script>
     // Change Submit buttons within docs examples to type=button
     var article = document.querySelector('article');
