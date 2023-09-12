@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en-US" class="h-100 no-js {{ with .Page.Params.html_class }}{{ . -}}{{- end -}}">
+<html lang="{{ with .Site.LanguageCode }}{{- . -}}{{ else }}en-US{{- end -}}"
+  class="h-100 no-js {{ with .Page.Params.html_class }}{{ . -}}{{- end -}}">
 
 <head>
   {{ partial "meta" . }}
