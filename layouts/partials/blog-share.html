@@ -4,34 +4,34 @@
       <a href="https://twitter.com/intent/tweet?via=TrimbleCorpNews&text={{- .Title -}}&url={{- .Permalink -}}"
         class="opacity-75" title="Share on X" data-bs-toggle="tooltip"
         onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
-        {{ partial "icons/brands/twitter-square.svg" (dict "class" "text-body" "width" "28" "height" "28") }}
-        <span class="sr-only visually-hidden">X</span></a>
+        {{ partial "icons/brands/square-x-twitter.svg" (dict "class" "text-body" "width" "28" "height" "28") }}
+        <span class="visually-hidden">X</span></a>
     </div> -->
     <div class="d-inline-block me-2">
       <a href="https://www.facebook.com/sharer.php?u={{- .Permalink -}}" class="opacity-75" title="Share on Facebook"
         data-bs-toggle="tooltip" data-bs-placement="top"
         onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
         {{- partial "icons/brands/facebook-square.svg" (dict "class" "text-body" "width" "28" "height" "28") -}}
-        <span class="sr-only visually-hidden">Facebook</span></a>
+        <span class="visually-hidden">Facebook</span></a>
     </div>
     <div class="d-inline-block me-2">
       <a href="https://www.linkedin.com/shareArticle?mini=true&url={{- .Permalink -}}&title={{- .Title -}}&summary={{- .Summary -}}"
         class="opacity-75" title="Share on LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top"
         onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
         {{ partial "icons/brands/linkedin.svg" (dict "class" "text-body" "width" "28" "height" "28") }}
-        <span class="sr-only visually-hidden">LinkedIn</span></a>
+        <span class="visually-hidden">LinkedIn</span></a>
     </div>
     <!-- <div class="d-inline-block me-2">
       <a href="mailto:?subject={{- .Title -}}%20-%20Modus%20Style%20Guide&body=Check out this site: {{ .Permalink }}"
         class="opacity-75 bg-light" title="Share via Email" data-bs-toggle="tooltip" data-bs-placement="top"
         onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
         {{ partial "icons/modus-solid/email.svg" (dict "class" "text-body" "width" "28" "height" "28") }}
-        <span class="sr-only visually-hidden">Email</span></a>
+        <span class="visually-hidden">Email</span></a>
     </div> -->
     <div class="d-inline-block me-2">
       <button class="opacity-75 border-0 bg-transparent btn-share-web-api p-0 d-none" title="Share"
         data-bs-toggle="tooltip" data-bs-placement="top">
-        <span class="sr-only visually-hidden">Share</span></button>
+        <span class="visually-hidden">Share</span></button>
     </div>
   </div>
 </div>
