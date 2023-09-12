@@ -28,7 +28,7 @@
       if (event.which === 27) {
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-          tooltipTriggerEl.dispatchEvent(new CustomEvent('hide.bs.tooltip')); w
+          $(tooltipTriggerEl).tooltip('hide');
         });
       }
     });
