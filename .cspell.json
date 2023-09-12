@@ -1,5 +1,6 @@
 {
   "version": "0.2",
+  "allowCompoundWords": true,
   "words": [
     "affordance",
     "anchorize",
@@ -36,7 +37,6 @@
     "warnf",
     "WCAG"
   ],
-  "allowCompoundWords": true,
   "flagWords": [
     "blacklist",
     "card-block",
@@ -58,10 +58,7 @@
     ".cspell.json",
     "**/node_modules/**",
     "*.min.*",
-    "{coverage,dist,.cache,.git,.vscode,.DS_Store,tests}/**/*",
-    "*.{log,svg,snap}",
-    "tiger-teams.md",
-    ".terms.jsonc"
+    "{coverage,dist,.cache,.git,.vscode,.DS_Store,tests}/**/*"
   ],
   "useGitignore": true
 }
