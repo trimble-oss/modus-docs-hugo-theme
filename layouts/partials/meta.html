@@ -19,7 +19,9 @@
 <link rel="stylesheet" href="{{- .Site.BaseURL -}}fonts/modus-icons.css">
 
 <!-- Loads Dark Mode Toggle JS -->
-<script src="{{- .Site.BaseURL -}}js/theme-toggle.js"></script>
+
+{{ $ThemeToggleJS := resources.Get "js/theme-toggle.js" | minify }}
+<script src="{{- .Site.BaseURL -}}{{ $ThemeToggleJS.RelPermalink }}"></script>
 
 <meta name="description"
   content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{- end -}}{{- end -}}">
@@ -31,10 +33,11 @@
 {{ end }}
 
 <!-- no need to define additional Twitter card meta tags as fallback to Open Graph -->
-<!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#twitter-cards-and-open-graph -->
+<!-- https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#twitter-cards-and-open-graph -->
 
 {{- if .Params.private -}}
 <meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="none">
 {{ end }}
 
 {{- with .Site.Params.themeColor -}}
@@ -43,10 +46,12 @@
 <meta name="theme-color" content="{{- . | default "#005f9e" -}}">
 {{ end }}
 
+{{- if .IsHome -}}
 {{- with .Site.Params.googleSiteVerification -}}
 <!-- Google Site Verification -->
 <!-- https://support.google.com/webmasters/answer/9008080?hl=en -->
 <meta name="google-site-verification" content="{{- . -}}">
+{{ end }}
 {{ end }}
 
 <!-- Loads the Trimble favicon and the SVG icon -->
