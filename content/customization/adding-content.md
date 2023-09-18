@@ -21,6 +21,7 @@ You can also specify additional front matter variables:
 - `draft` - Set to `true` to hide the page from the site
 - `aliases` - A list of aliases for the page
 - `toc` - Set to `false` to hide the table of contents
+- `sitemap_exclude` - Set to `true` to exclude from the sitemap.xml
 
 ## Images
 
@@ -35,7 +36,7 @@ Images by default have a max-width of 100% so larger images scale down on smalle
 For more control over images you can use a shortcode as follows:
 
 ```markdown
-{{/ < img src="/img/image.svg" dark="/img/image-dark.png" class=" " width="128" height="128" alt=" " >\}}
+{{ < img src="/img/image.svg" dark="/img/image-dark.png" class=" " width="128" height="128" alt=" " }}
 ```
 
 This allows you to specify a dark mode image, height, width a class and an alt tag.
