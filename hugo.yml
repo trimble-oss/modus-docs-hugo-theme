@@ -36,6 +36,15 @@ module:
     - source: static
       target: static
 
+    - source: node_modules/@trimble-oss/modus-bootstrap/dist/css/modus-bootstrap.min.css
+      target: static/css/modus-bootstrap.min.css
+
+    - source: node_modules/@trimble-oss/modus-bootstrap/dist/css/modus-bootstrap.min.css.map
+      target: static/css/modus-bootstrap.min.css.map
+
+    - source: node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+      target: static/js/bootstrap.bundle.min.js
+
     - source: node_modules/@trimble-oss/modus-icons/dist/modus-solid/sprites/modus-icons.svg
       target: static/modus-solid-icons.svg
 
