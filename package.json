@@ -19,7 +19,7 @@
     "lint-html": "htmlhint \"build/**/index.html\"",
     "lint-js": "eslint assets/js/*.js --fix",
     "lint-links": "npx linkinator ./",
-    "lint-markdown": "npx markdownlint-cli content/**/*.md",
+    "lint-markdown": "npx markdownlint-cli content/**/*.md --fix",
     "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
     "prettier": "prettier --write \"**/*.{json,js,md,svg}\"",
     "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged",
