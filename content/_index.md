@@ -19,8 +19,8 @@ layout: "home"
 {{% blocks/feature icon="check" title="Many components ready to use" %}}
 Many components ready to use
 {{% /blocks/feature %}}
-{{% blocks/feature icon="info" title="Open Source" url="https://github.com/gohugoio/hugo" %}}
-We do a [Pull Request](https://github.com/gohugoio/hugo/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="info" title="Open Source" url="https://github.com/" %}}
+We do a [Pull Request](https://github.com/) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 {{% blocks/feature icon="sun" title="Awesome" url="" %}}
 For announcement of latest features etc.
