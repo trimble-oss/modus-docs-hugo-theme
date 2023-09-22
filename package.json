@@ -15,7 +15,7 @@
   "scripts": {
     "build": "npx hugo",
     "lint": "npm run lint-css && npm run lint-html && npm run lint-js",
-    "lint-css": "stylelint \"assets/styles/*.*\" --fix",
+    "lint-css": "stylelint \"assets/css/*.*\" --fix",
     "lint-html": "htmlhint \"build/**/index.html\"",
     "lint-js": "eslint assets/js/*.js --fix",
     "lint-links": "npx linkinator ./",
