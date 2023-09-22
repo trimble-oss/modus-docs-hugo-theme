@@ -10,7 +10,7 @@
 
 <!-- Compiles and minifies the sites Sass files from /assets/css/ -->
 {{- $sassOptions := (dict "enableSourceMap" true) -}}
-{{ $styles := resources.Get "styles/styles.scss" | toCSS $sassOptions | postCSS | minify }}
+{{ $styles := resources.Get "css/modus-docs.scss" | toCSS $sassOptions | postCSS | minify }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}?v{{ hugo.Version }}">
 
 <!-- Load jQuery from CDN with fallback -->

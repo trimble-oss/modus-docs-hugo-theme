@@ -1,0 +1,33 @@
+main table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(133, 133, 133, 0.1);
+  vertical-align: top;
+  // border-color: var(--bs-table-border-color);
+}
+
+main table thead th {
+  vertical-align: middle;
+  line-height: 1.25;
+  border-bottom-width: 1px;
+}
+
+main table thead tr {
+  background-color: rgba(133, 133, 133, 0.1);
+}
+
+main table td {
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 0 var(--bs-border-width);
+}
+
+table > :not(caption) > * > * {
+  padding: 0.25rem 1rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: var(--bs-border-width);
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
