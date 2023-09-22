@@ -81,6 +81,10 @@ a.header-link::after {
   display: inline-block;
 }
 
+#main {
+  max-width: 1090px;
+}
+
 .docs-callout {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;

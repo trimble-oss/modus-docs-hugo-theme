@@ -16,7 +16,7 @@
 
   <div>
     {{- with .Site.Params.GitHubRepo -}}
-    <a href="{{- . -}}" class="btn btn-lg btn-outline-secondary bg-transparent btn-icon-only border-0 mx-1"
+    <a href="{{- . -}}" class="btn btn-lg btn-outline-secondary text-body bg-transparent btn-icon-only border-0 mx-1"
       target="_blank" rel="noopener" data-bs-toggle="tooltip" title="GitHub">
       {{ partial "icons/brands/github.svg" (dict "class" "mt-2" "width" "22" "height" "22") }}
     </a>
