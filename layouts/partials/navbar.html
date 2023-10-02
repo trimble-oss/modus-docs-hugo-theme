@@ -3,13 +3,12 @@
     <div>
       <button class="btn btn-lg btn-primary btn-icon-only bg-transparent d-inline-block border-0" type="button"
         aria-label="Menu" data-bs-target="#sidebar" data-bs-toggle="collapse">
-        <i class="modus-icons menu-btn notranslate mt-1 text-white" aria-hidden="true">menu</i>
+        {{ partial "icons/modus-solid/menu.svg" (dict "class" "menu-btn text-white" "width" "24" "height" "24") }}
       </button>
       <a class="navbar-brand text-primary" href="/">
-        <img src="https://modus-bootstrap.trimble.com/img/trimble-logo-rev.svg" width="107" height="25"
-          class="img-fluid d-none d-sm-inline-block" alt="home" />
-        <img src="https://modus-bootstrap.trimble.com/img/trimble-icon-rev.svg"
-          class="d-inline-block d-sm-none px-1 mt-1" height="25" width="25" alt="home" />
+        {{ partial "logos/trimble.svg" (dict "class" "img-fluid d-none d-sm-inline-block text-white" "width" "117" "height" "28") }}
+        {{ partial "icons/modus-solid/trimble-logo.svg" (dict "class" "d-inline-block d-sm-none text-white" "width" "32" "height" "32") }}
+
         {{- if .Site.Params.Title -}}
         <div class="float-end text-white h2 d-none d-md-inline-block navbar-site-title">
           {{- .Site.Title -}}
