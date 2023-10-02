@@ -21,13 +21,13 @@
     "lint-links": "npx linkinator ./",
     "lint-markdown": "npx markdownlint-cli content/**/*.md --fix",
     "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
-    "prettier": "prettier --write \"**/*.{json,js,md,svg}\"",
+    "prettier": "prettier --write \"**/*.{json,js,md,svg,yml}\"",
     "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged",
     "test": "npm run lint-css && npm run lint-html && npm run lint-js"
   },
   "dependencies": {
-    "@trimble-oss/modus-bootstrap": "2.0.0-alpha2",
-    "@trimble-oss/modus-icons": "1.4.0"
+    "@trimble-oss/modus-bootstrap": "2.0.0-alpha3",
+    "@trimble-oss/modus-icons": "1.5.1"
   },
   "devDependencies": {
     "autoprefixer": "10.4.16",
@@ -35,7 +35,7 @@
     "eslint-config-prettier": "9.0.0",
     "htmlhint": "1.1.4",
     "hugo-bin": "0.114.2",
-    "postcss": "8.4.30",
+    "postcss": "8.4.31",
     "postcss-cli": "10.1.0",
     "prettier": "3.0.3",
     "stylelint": "15.10.3",
