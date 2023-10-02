@@ -14,8 +14,9 @@ params:
   GitHubRepo: "https://github.com/trimble-oss/modus-docs-hugo-theme"
   # googleSiteVerification: "" # Optional - Google Search Console verification code
   # PlausibleAnalyticsDomain: "" # Optional - Plausible Analytics domain e.g. example.com
-  themeColor: "#005f9e"
-  expandAllAccordions: true
+  themeColor: "#005f9e" # Optional - Theme color for mobile browsers
+  expandAllAccordions: true # Optional - Expand all accordions on page load
+  # disableThemeToggle: true # Optional - Disable theme toggle button
 
 disableKinds: ["sitemap", "taxonomy", "RSS"]
 pygmentsUseClasses: true

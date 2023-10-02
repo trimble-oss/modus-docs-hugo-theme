@@ -7,9 +7,7 @@
       data-bs-target="#sidebar" data-bs-toggle="collapse" aria-label="Expand Menu"
       style="width:48px; margin-left: 6px;">
       <div class="text-body text-center">
-        <svg width="24" height="24" fill="currentColor">
-          <use xlink:href="/modus-icons.svg#user-guide" />
-        </svg>
+        {{ partial "icons/modus-solid/user-guide.svg" (dict "class" "" "width" "24" "height" "24") }}
       </div>
     </button>
   </div>
@@ -22,7 +20,9 @@
     </a>
     {{ end }}
 
+    {{- if not .Site.Params.disableThemeToggle -}}
     {{ partial "btn-theme-toggle" . }}
+    {{ end }}
   </div>
 
 </div>

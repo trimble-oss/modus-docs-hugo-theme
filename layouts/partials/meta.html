@@ -5,8 +5,10 @@
 <!-- Removes the .no-js class from the <html> element if JavaScript is enabled -->
 <script>document.documentElement.classList.remove('no-js');</script>
 
+{{- if not .Site.Params.disableModusBootstrapCSS -}}
 <!-- Load Modus Bootstrap CSS from CDN -->
 <link rel="stylesheet" href="{{- .Site.BaseURL -}}css/modus-bootstrap.min.css">
+{{ end }}
 
 <!-- Compiles and minifies the sites Sass files from /assets/css/ -->
 {{- $sassOptions := (dict "enableSourceMap" true) -}}
@@ -18,10 +20,11 @@
 <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>');</script>
 <link rel="stylesheet" href="{{- .Site.BaseURL -}}fonts/modus-icons.css">
 
+{{- if not .Site.Params.disableThemeToggle -}}
 <!-- Loads Dark Mode Toggle JS -->
-
 {{ $ThemeToggleJS := resources.Get "js/theme-toggle.js" | minify }}
 <script src="{{- .Site.BaseURL -}}{{ $ThemeToggleJS.RelPermalink }}"></script>
+{{ end }}
 
 <meta name="description"
   content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{- end -}}{{- end -}}">
