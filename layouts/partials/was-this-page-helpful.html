@@ -3,12 +3,14 @@
   <button type="button"
     class="btn btn-light btn-outline-secondary btn-feedback btn-feedback-helpful border rounded p-1 me-2"
     aria-label="Helpful">
-    {{- partial "icons/modus-outlined/thumbs-up.svg" (dict "width" "22" "height" "22" "class" "mx-2 mx-auto text-primary") -}}
+    {{- partial "icons/modus-solid/thumbs-up.svg" (dict "width" "22" "height" "22" "class" "mx-2 mx-auto text-primary d-none icon-helpful-solid") -}}
+    {{- partial "icons/modus-outlined/thumbs-up.svg" (dict "width" "22" "height" "22" "class" "mx-2 mx-auto text-primary icon-helpful-outlined") -}}
   </button>
   <button type="button"
     class="btn btn-light btn-outline-secondary btn-feedback btn-feedback-not-helpful border rounded p-1"
     aria-label="Not Helpful">
-    {{- partial "icons/modus-outlined/thumbs-down.svg" (dict "width" "22" "height" "22" "class" "mx-2 mx-auto text-primary") -}}
+    {{- partial "icons/modus-solid/thumbs-down.svg" (dict "width" "22" "height" "22" "class" "mx-2 mx-auto text-primary d-none icon-not-helpful-solid") -}}
+    {{- partial "icons/modus-outlined/thumbs-down.svg" (dict "width" "22" "height" "22" "class" "mx-2 mx-auto text-primary icon-not-helpful-outlined") -}}
   </button>
 </div>
 

@@ -1,10 +1,12 @@
 {
   "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
   "rules": {
     "alpha-value-notation": null,
     "color-function-notation": null,
     "media-feature-range-notation": null,
     "no-descending-specificity": null,
+    "order/properties-alphabetical-order": true,
     "selector-anb-no-unmatchable": null,
     "selector-id-pattern": null
   }

@@ -50,8 +50,8 @@
 
   [data-bs-theme="dark"] .sun-and-moon > .sun {
     transform: scale(1.75);
-    transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
     transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
   }
 
   [data-bs-theme="dark"] .sun-and-moon > .sun-beams {
@@ -70,13 +70,13 @@
 
   aspect-ratio: 1;
   cursor: pointer;
-  touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .theme-toggle > svg {
-  inline-size: 100%;
   block-size: 100%;
+  inline-size: 100%;
   max-height: 18px;
   max-width: 18px;
   stroke-linecap: round;

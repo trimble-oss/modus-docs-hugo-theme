@@ -1,7 +1,7 @@
 .no-js input,
 .no-js a[data-toggle] {
-  pointer-events: none !important;
   opacity: 0.65;
+  pointer-events: none !important;
 }
 
 .no-js nav.navbar {
@@ -9,12 +9,12 @@
 }
 
 .no-js body::before {
-  height: 32px;
   background-color: #e0e1e9;
-  text-align: center;
   content: "⚠️ JavaScript is disabled. This site requires JavaScript to be enabled ⚠️";
   display: block;
+  height: 32px;
   position: fixed;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 1;

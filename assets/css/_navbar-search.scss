@@ -1,6 +1,6 @@
 .search-container {
-  width: 40px;
   left: -12px;
+  width: 40px;
 }
 
 .form-control-search {
@@ -10,27 +10,27 @@
   background-size: 20px;
   border-left: 0;
   border-right: 0;
+  left: auto;
   padding: 0;
+  right: 5px;
+  top: 10px;
+  transition: all 0.2s;
   width: 0 !important;
   z-index: 1210;
-  transition: all 0.2s;
-  left: auto;
-  top: 10px;
-  right: 5px;
 }
 
 .form-control-search:focus {
-  width: 363px !important;
   max-width: calc(100vw - 200px);
-  text-indent: 18px;
   padding: 0 4px 4px 16px;
+  text-indent: 18px;
   visibility: visible;
+  width: 363px !important;
 }
 
 .form-control-search:focus + .btn-search {
-  transition: all 1s;
   background-color: transparent;
   pointer-events: none !important;
+  transition: all 1s;
 }
 
 .form-control-search:focus + .btn-search img {

@@ -12,15 +12,15 @@
 
 // right menu
 #TableOfContents li a {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  font-size: 13px;
   border-left: 1px solid transparent;
+  font-size: 13px;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
 }
 
 .menu-right a {
-  font-size: 13px;
   color: #171c1e;
+  font-size: 13px;
 }
 
 [data-bs-theme="dark"] {
@@ -50,6 +50,6 @@ hr {
 
 // scrollspy color
 .menu-right #TableOfContents li .active {
-  color: #000 !important;
   border-left: 1px solid #0d6aa8 !important;
+  color: #000 !important;
 }

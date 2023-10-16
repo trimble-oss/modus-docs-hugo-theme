@@ -29,8 +29,8 @@
 /* SM */
 @media (max-width: 767px) {
   #sidebar.show {
-    width: calc(100% - 68px) !important;
     min-width: calc(100% - 68px) !important;
+    width: calc(100% - 68px) !important;
   }
 
   #sidebar.show + div {
@@ -46,7 +46,7 @@
 /* SM Only */
 @media (min-width: 575px) and (max-width: 767px) {
   #sidebar-menu .list-unstyled li {
-    width: 50%;
     display: inline-block;
+    width: 50%;
   }
 }
