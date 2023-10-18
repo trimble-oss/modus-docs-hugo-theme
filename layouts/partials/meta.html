@@ -35,7 +35,7 @@
 <meta property="og:locale" content="en_US">
 {{ end }}
 
-<!-- no need to define additional Twitter card meta tags as fallback to Open Graph -->
+<!-- no need to define additional X (Twitter) card meta tags as fallback to Open Graph -->
 <!-- https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#twitter-cards-and-open-graph -->
 
 {{- if .Params.private -}}
@@ -47,14 +47,6 @@
 <!-- Theme Color is used for the tab color on Chrome for Android -->
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color -->
 <meta name="theme-color" content="{{- . | default "#005f9e" -}}">
-{{ end }}
-
-{{- if .IsHome -}}
-{{- with .Site.Params.googleSiteVerification -}}
-<!-- Google Site Verification -->
-<!-- https://support.google.com/webmasters/answer/9008080?hl=en -->
-<meta name="google-site-verification" content="{{- . -}}">
-{{ end }}
 {{ end }}
 
 <!-- Loads the Trimble favicon and the SVG icon -->
@@ -85,6 +77,14 @@
 
 <!-- Loads Bootstrap 5 JS from CDN -->
 <script src="{{- .Site.BaseURL -}}js/bootstrap.bundle.min.js"></script>
+
+{{- if .IsHome -}}
+{{- with .Site.Params.googleSiteVerification -}}
+<!-- Google Site Verification -->
+<!-- https://support.google.com/webmasters/answer/9008080?hl=en -->
+<meta name="google-site-verification" content="{{- . -}}">
+{{ end }}
+{{ end }}
 
 {{ partial "analytics" . }}
 
