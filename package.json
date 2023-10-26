@@ -26,7 +26,7 @@
     "test": "npm run lint-css && npm run lint-html && npm run lint-js"
   },
   "dependencies": {
-    "@trimble-oss/modus-bootstrap": "2.0.0-alpha8",
+    "@trimble-oss/modus-bootstrap": "2.0.0-alpha9",
     "@trimble-oss/modus-icons": "1.7.0"
   },
   "devDependencies": {
