@@ -1,8 +1,12 @@
 # Modus Docs Hugo Theme (Experimental)
 
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/trimble-oss/modus-docs-hugo-theme/main/LICENSE)
+[![GitHub Super-Linter](https://github.com/trimble-oss/modus-docs-hugo-theme/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![npm Version](https://img.shields.io/npm/v/@trimble-oss/modus-docs-hugo-theme)](https://www.npmjs.com/package/@trimble-oss/modus-docs-hugo-theme)
+
 A documentation theme for Hugo.
 
-Status: Alpha. This theme is currently under development and is not yet ready for production use.
+**Status: Alpha. This theme is currently under development.**
 
 ## Installation
 
