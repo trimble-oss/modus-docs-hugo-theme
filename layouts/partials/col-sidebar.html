@@ -1,11 +1,9 @@
 <div
-  class="list-group d-block border-0 text-center sticky-top sticky-offset d-flex flex-column align-items-start justify-content-between"
-  style="height: calc(100dvh - 66px)">
+  class="list-group d-block border-0 text-center sticky-top sticky-offset d-flex flex-column align-items-start justify-content-between">
 
   <div class="text-center mx-auto w-100">
-    <button class="btn btn-lg btn-outline-secondary bg-transparent list-group-item border-0 mt-1" type="button"
-      data-bs-target="#sidebar" data-bs-toggle="collapse" aria-label="Expand Menu"
-      style="width:48px; margin-left: 6px;">
+    <button class="btn btn-lg btn-outline-secondary bg-transparent list-group-item border-0 mt-1 p-1 pt-0" type="button"
+      data-bs-target="#sidebar" data-bs-toggle="collapse" aria-label="Expand Menu">
       <div class="text-body text-center">
         {{ partial "icons/modus-solid/user-guide.svg" (dict "class" "" "width" "24" "height" "24") }}
       </div>
@@ -14,9 +12,10 @@
 
   <div>
     {{- with .Site.Params.GitHubRepo -}}
-    <a href="{{- . -}}" class="btn btn-lg btn-outline-secondary text-body bg-transparent btn-icon-only border-0 mx-1"
-      target="_blank" rel="noopener" data-bs-toggle="tooltip" title="GitHub">
-      {{ partial "icons/brands/github.svg" (dict "class" "mt-2" "width" "22" "height" "22") }}
+    <a href="{{- . -}}"
+      class="btn btn-lg btn-outline-secondary text-body bg-transparent btn-icon-only border-0 mx-1 p-1" target="_blank"
+      rel="noopener" data-bs-toggle="tooltip" title="GitHub">
+      {{ partial "icons/brands/github.svg" (dict "class" "mt-2" "width" "24" "height" "24") }}
     </a>
     {{ end }}
 
