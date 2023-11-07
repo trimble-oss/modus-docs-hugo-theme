@@ -40,7 +40,7 @@ h6 {
 }
 
 // underline links
-main a {
+main a:not([class]):not(li.breadcrumb-item a) {
   text-decoration: underline;
 }
 
