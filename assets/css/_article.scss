@@ -60,6 +60,10 @@ article h3:target::before {
   visibility: hidden;
 }
 
+#main {
+  max-width: 1090px;
+}
+
 #main::before {
   content: " ";
   display: block;
@@ -79,10 +83,6 @@ a.header-link::after {
   content: "#";
   display: inline-block;
   min-width: 20px;
-}
-
-#main {
-  max-width: 1090px;
 }
 
 .docs-callout {

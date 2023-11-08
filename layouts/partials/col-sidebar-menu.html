@@ -11,6 +11,19 @@
     div.classList.add('show');
   }
 </script>
+{{ if site.Params.expandAllAccordions }}
+<style>
+  .accordion-button {
+    pointer-events: none !important;
+  }
+  .accordion-button::after {
+    opacity: 0;
+  }
+  .accordion-button:hover {
+    background-color: transparent !important;
+  }
+</style>
+{{ end }}
 
 <!-- https://github.com/twbs/bootstrap/blob/v5.3.2/site/layouts/partials/docs-sidebar.html -->
 <div class="">
@@ -33,9 +46,12 @@
     {{- if $group.pages }}
     <div class="accordion-item">
       <h6 class="accordion-header">
-        <button class="accordion-button collapsed fs-5 ps-3 py-1 opacity-75" type="button" data-bs-toggle="collapse"
-          data-bs-target="#flush-collapse-{{- $group.title | urlize -}}" aria-expanded="false"
-          aria-controls="flush-collapse-{{- $group.title | urlize -}}">
+        <button class="accordion-button {{ if $is_active_group }}{{ else }}collapsed{{ end }} fs-5 ps-3 py-1 opacity-75" type="button"
+        {{ if not site.Params.expandAllAccordions }}
+        data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse-{{- $group.title | urlize -}}"
+                    aria-expanded="{{- if $is_active_group -}}true{{- else -}}false{{- end -}}"
+          aria-controls="flush-collapse-{{- $group.title | urlize -}}"{{end }}>
           {{- if $group.icon }}
           {{- end }}
           {{ $group.title }}
@@ -43,7 +59,7 @@
       </h6>
 
       <div id="flush-collapse-{{- $group.title | urlize -}}"
-        class="accordion-collapse collapse {{ if $is_active_group }} show{{ end }} {{ if site.Params.expandAllAccordions }}show{{- end -}}">
+        class="accordion-collapse collapse {{ if $is_active_group }}show{{ end }} {{ if site.Params.expandAllAccordions }}show{{- end -}}">
         <div class="accordion-body py-1 bg-secondary bg-opacity-10">
           <ul class="list-unstyled">
             {{- range $doc := $group.pages -}}
