@@ -121,3 +121,9 @@ article .nav-tabs .nav-link::after {
 article table {
   width: 100%;
 }
+
+#sidebar.show + div {
+  width: calc(100vw - 314px - var(--scrollbar-width));
+  min-width: calc(100vw - 330px);
+  max-width: calc(100vw - 321px - var(--scrollbar-width)) !important;
+}

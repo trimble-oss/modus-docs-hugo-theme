@@ -1,3 +1,14 @@
+<script>
+  function _calculateScrollbarWidth() {
+    document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+  }
+  // recalculate on resize
+  window.addEventListener('resize', _calculateScrollbarWidth, false);
+  // recalculate on dom load
+  document.addEventListener('DOMContentLoaded', _calculateScrollbarWidth, false);
+  // recalculate on load (assets loaded as well)
+  window.addEventListener('load', _calculateScrollbarWidth);
+</script>
 <header class="pt-5 bg-secondary-subtle bg-opacity-10 border-bottom" {{- if (or (.Params.blog) (.Params.image)) -}}
   style="background-image: url({{- .Params.Image | relURL -}});{{- with .Params.headerBgColor -}}background-color:{{- . -}} !important;{{- end -}};"
   {{ end }}>
