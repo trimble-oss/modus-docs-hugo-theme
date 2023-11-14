@@ -1,5 +1,5 @@
 html[data-bs-theme="dark"] {
-  .dropdown-menu img {
+  nav.navbar-blue .dropdown-menu img {
     filter: invert(1);
   }
 }
@@ -8,9 +8,20 @@ html[data-bs-theme="dark"] {
   margin-top: 12px;
 }
 
-nav.navbar label.btn:hover,
-nav.navbar button.btn:hover {
-  background-color: #217cbb !important;
-  border-color: #019aeb;
-  border: 1px solid #019aeb !important;
+nav.navbar-blue {
+  label.btn,
+  button.btn {
+    border-color: transparent !important;
+
+    &:hover {
+      background-color: #217cbb !important;
+      border-color: #019aeb;
+      border: 1px solid #019aeb !important;
+    }
+  }
+}
+
+nav.navbar-blue .dropdown-menu {
+  min-width: 250px;
+  z-index: 1030;
 }

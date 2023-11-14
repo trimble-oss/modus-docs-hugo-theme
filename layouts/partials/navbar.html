@@ -1,7 +1,7 @@
 <nav class="navbar shadow-sm navbar-blue sticky-top" aria-label="Main Navigation">
   <div class="container-fluid">
     <div>
-      <button class="btn btn-lg btn-primary btn-icon-only bg-transparent d-inline-block border-0" type="button"
+      <button class="btn btn-lg btn-primary btn-icon-only bg-transparent d-inline-block" type="button"
         aria-label="Menu" data-bs-target="#sidebar" data-bs-toggle="collapse">
         {{ partial "icons/modus-solid/menu.svg" (dict "class" "menu-btn text-white" "width" "24" "height" "24") }}
       </button>
@@ -22,7 +22,7 @@
       {{ partial "navbar-search" . }}
 
       <div class="dropdown">
-        <button type="button" class="btn btn-lg btn-primary bg-transparent btn-icon-only border-0"
+        <button type="button" class="btn btn-lg btn-primary bg-transparent btn-icon-only"
           data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menu">
           <i class="modus-icons notranslate mt-2 text-white" aria-hidden="true">apps</i>
         </button>
