@@ -48,11 +48,11 @@
 }
 
 .row-main {
-  height: calc(100dvh - 66px);
+  min-height: calc(100dvh - 66px);
 }
 
 #sidebar.collapsing {
-  transition: none;
+  transition: none !important;
 }
 
 #sidebar.collapsing + div,
