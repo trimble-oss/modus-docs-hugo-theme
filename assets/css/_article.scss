@@ -123,7 +123,7 @@ article table {
 }
 
 #sidebar.show + div {
-  width: calc(100vw - 314px - var(--scrollbar-width));
-  min-width: calc(100vw - 330px);
   max-width: calc(100vw - 321px - var(--scrollbar-width)) !important;
+  min-width: calc(100vw - 330px);
+  width: calc(100vw - 314px - var(--scrollbar-width));
 }
