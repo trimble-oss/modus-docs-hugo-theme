@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@trimble-oss/modus-bootstrap": "2.0.0-alpha15",
-    "@trimble-oss/modus-icons": "1.7.0"
+    "@trimble-oss/modus-icons": "1.8.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.16",
@@ -37,10 +37,10 @@
     "hugo-bin": "0.116.4",
     "postcss": "8.4.32",
     "postcss-cli": "11.0.0",
-    "prettier": "3.1.0",
-    "stylelint": "15.11.0",
-    "stylelint-config-standard-scss": "11.1.0",
-    "stylelint-order": "6.0.3"
+    "prettier": "3.1.1",
+    "stylelint": "16.0.2",
+    "stylelint-config-standard-scss": "12.0.0",
+    "stylelint-order": "6.0.4"
   },
   "hugo-bin": {
     "buildTags": "extended"
