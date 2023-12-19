@@ -10,7 +10,7 @@
   window.addEventListener('load', _calculateScrollbarWidth);
 </script>
 <header class="pt-5 bg-secondary-subtle bg-opacity-10 border-bottom" {{- if (or (.Params.blog) (.Params.image)) -}}
-  style="background-image: url({{- .Params.Image | relURL -}});{{- with .Params.headerBgColor -}}background-color:{{- . -}} !important;{{- end -}};"
+  style="background-image: url({{- .Params.Image | relURL -}});{{- with .Params.headerBgColor -}}background-color: {{- . -}} !important; {{- end -}};"
   {{ end }}>
   <div class="container pt-xl-3" style="max-width: 1090px">
     {{ if not .Params.blog }}

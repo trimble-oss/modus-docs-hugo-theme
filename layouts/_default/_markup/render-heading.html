@@ -1,4 +1,4 @@
-<h{{ .Level }} id="{{ .Anchor | safeURL }}"
+<h{{ .Level }} id="{{- .Anchor | safeURL -}}"
   class="{{- if (eq .Level 2 ) }}
   h1 mt-5 {{- end -}}
  {{- if (eq .Level 3 ) }}

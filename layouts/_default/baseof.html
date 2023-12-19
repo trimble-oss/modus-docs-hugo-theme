@@ -28,7 +28,10 @@
       if (event.which === 27) {
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-          $(tooltipTriggerEl).tooltip('hide');
+          var bootstrapTooltip = bootstrap.Tooltip.getInstance(tooltipTriggerEl);
+          if (bootstrapTooltip) {
+            bootstrapTooltip.hide();
+          }
         });
       }
     });

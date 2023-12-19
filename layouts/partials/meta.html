@@ -13,7 +13,7 @@
 <!-- Compiles and minifies the sites Sass files from /assets/css/ -->
 {{- $sassOptions := (dict "enableSourceMap" true) -}}
 {{ $styles := resources.Get "css/modus-docs.scss" | toCSS $sassOptions | postCSS | minify }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}?v{{ hugo.Version }}">
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}?v{{- hugo.Version -}}">
 
 <!-- Load jQuery from CDN with fallback -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
