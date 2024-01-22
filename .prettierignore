@@ -9,4 +9,6 @@ static/
 *.min.js
 *.min.js.map
 *.html
+
+package-lock.json
 postcss.config.js
