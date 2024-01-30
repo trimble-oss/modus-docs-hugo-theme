@@ -1,6 +1,6 @@
 {
   "name": "@trimble-oss/modus-docs-hugo-theme",
-  "version": "1.0.0-alpha16",
+  "version": "1.0.0-alpha17",
   "description": "A Documentation theme for Hugo built by Trimble",
   "homepage": "https://github.com/trimble-oss/modus-docs-hugo-theme",
   "bugs": {
@@ -18,7 +18,7 @@
     "lint-css": "stylelint \"assets/css/*.*\" --fix",
     "lint-html": "htmlhint \"build/**/index.html\"",
     "lint-js": "eslint assets/js/*.js --fix",
-    "lint-links": "npx linkinator ./",
+    "lint-links": "npx linkinator ./public --recurse --silent",
     "lint-markdown": "npx markdownlint-cli content/**/*.md --fix",
     "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
     "prettier": "prettier --write \"**/*.{json,js,md,svg,yml}\"",
@@ -26,7 +26,7 @@
     "test": "npm run lint-css && npm run lint-html && npm run lint-js"
   },
   "dependencies": {
-    "@trimble-oss/modus-bootstrap": "2.0.0-alpha18",
+    "@trimble-oss/modus-bootstrap": "2.0.0-alpha19",
     "@trimble-oss/modus-icons": "1.9.0"
   },
   "devDependencies": {
