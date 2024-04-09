@@ -1,4 +1,4 @@
 {
   "upgrade": true,
-  "reject": ["hugo-bin"]
+  "reject": ["eslint"]
 }
