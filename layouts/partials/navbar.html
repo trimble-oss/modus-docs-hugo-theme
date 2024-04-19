@@ -19,8 +19,11 @@
 
     <div class="d-flex d-row">
 
+      {{- with .Site.Params.RemoveSearch -}}{{else}}
       {{ partial "navbar-search" . }}
+      {{ end }}
 
+      {{- with .Site.Params.RemoveSearch -}}{{else}}
       <div class="dropdown">
         <button type="button" class="btn btn-lg btn-primary bg-transparent btn-icon-only"
           data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menu">
@@ -28,6 +31,7 @@
         </button>
 
         {{ partial "navbar-dropdown" . }}
+        {{ end }}
 
       </div>
     </div>

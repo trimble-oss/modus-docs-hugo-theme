@@ -17,6 +17,7 @@ params:
   themeColor: "#005f9e" # Optional - Theme color for mobile browsers
   expandAllAccordions: true # Optional - Expand all accordions on page load
   # disableThemeToggle: true # Optional - Disable theme toggle button
+  RemoveSearch: false # Optional - Remove search functionality
 
 disableKinds: ["sitemap", "taxonomy", "RSS"]
 pygmentsUseClasses: true
