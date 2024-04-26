@@ -122,8 +122,3 @@ article table {
   width: 100%;
 }
 
-#sidebar.show + div {
-  max-width: calc(100vw - 321px - var(--scrollbar-width)) !important;
-  min-width: calc(100vw - 330px);
-  width: calc(100vw - 314px - var(--scrollbar-width));
-}
