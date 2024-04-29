@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@trimble-oss/modus-bootstrap": "2.0.0-alpha23",
-    "@trimble-oss/modus-icons": "1.12.1"
+    "@trimble-oss/modus-icons": "1.13.1"
   },
   "devDependencies": {
     "autoprefixer": "10.4.19",
