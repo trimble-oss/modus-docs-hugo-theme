@@ -21,7 +21,6 @@ You can also specify additional front matter variables:
 - `draft` - Set to `true` to hide the page from the site
 - `aliases` - A list of aliases for the page
 - `toc` - Set to `false` to hide the table of contents
-- `sitemap_exclude` - Set to `true` to exclude from the sitemap.xml
 
 ## Images
 

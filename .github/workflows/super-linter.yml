@@ -4,18 +4,27 @@ on:
   push:
     branches-ignore:
       - "dependabot/**"
+  pull_request:
+    branches-ignore:
+      - "dependabot/**"
 
 jobs:
   build:
+    permissions:
+      contents: read #  to fetch code (actions/checkout)
+      statuses: write #  to mark status of each linter run (super-linter/super-linter/slim)
+
     name: Lint Code Base
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Lint Code Base
-        uses: github/super-linter/slim@v6
+        uses: super-linter/super-linter/slim@v6
         env:
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: .*css/.*
