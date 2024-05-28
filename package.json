@@ -23,7 +23,9 @@
     "lint-spellcheck": "npx cspell \"content/**/*.md\" --no-progress",
     "prettier": "prettier --write \"**/*.{json,js,md,svg,yml}\"",
     "serve": "hugo serve --port 4000 --disableFastRender --navigateToChanged",
-    "test": "npm run lint-css && npm run lint-html && npm run lint-js"
+    "test": "npm run lint-css && npm run lint-html && npm run lint-js",
+    "pa11y": "npx pa11y-ci https://victorious-field-0a3116c10.3.azurestaticapps.net/",
+    "svgo": "npx svgo --folder=\"static/img/icons/\""
   },
   "dependencies": {
     "@trimble-oss/modus-bootstrap": "2.0.0-alpha27",

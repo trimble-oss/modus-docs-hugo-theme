@@ -2,11 +2,4 @@
 
 {{ template "_internal/google_analytics.html" . }}
 
-{{- with .Site.Params.PlausibleAnalyticsDomain -}}
-<script defer data-domain="{{- . -}}" src="https://plausible.io/js/script.outbound-links.js"></script>
-<script>
-  window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }
-</script>
-{{- end -}}
-
 {{- end -}}
