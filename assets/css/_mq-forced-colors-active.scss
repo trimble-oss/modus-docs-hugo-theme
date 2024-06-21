@@ -1,0 +1,29 @@
+@media (forced-colors: active) {
+  nav.navbar.sticky-top {
+    border-bottom: 1px solid transparent;
+  }
+
+  .col-sidebar {
+    border-right: 1px solid transparent;
+  }
+
+  .highlight {
+    margin-bottom: 1rem;
+    outline: 1px solid transparent;
+  }
+
+  .nav-link.active {
+    outline: 1px solid transparent;
+  }
+}
+
+@media (forced-colors: active) and (prefers-color-scheme: light) {
+  nav.navbar.sticky-top .btn svg {
+    fill: ButtonText;
+  }
+
+  nav .navbar-brand svg {
+    filter: invert(1);
+    forced-color-adjust: none;
+  }
+}
