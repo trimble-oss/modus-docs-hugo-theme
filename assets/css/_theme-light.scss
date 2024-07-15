@@ -1,5 +1,5 @@
 [data-bs-theme="light"] {
-  article a.btn-primary::after {
+  article a.btn-primary:not(.dropdown-toggle)::after {
     filter: invert(1);
   }
 }
