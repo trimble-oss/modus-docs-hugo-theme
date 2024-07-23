@@ -48,11 +48,6 @@
   ],
   "language": "en,en-US",
   "ignoreRegExpList": [
-    "<!-- prettier-ignore -->\\n(`{3,})\\w*\\n[\\s\\S]+?\\1",
-    "\\[(\\*{2})?@\\w+?\\1\\]",
-    "\\[`\\w+`\\]",
-    "\\/.*?\\/",
-    "\\_\\w+",
     "\\#\\w+"
   ],
   "ignorePaths": [
