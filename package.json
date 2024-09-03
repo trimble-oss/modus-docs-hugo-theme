@@ -28,7 +28,7 @@
     "svgo": "npx svgo --folder=\"static/img/icons/\""
   },
   "dependencies": {
-    "@trimble-oss/modus-bootstrap": "2.0.0-alpha43",
+    "@trimble-oss/modus-bootstrap": "2.0.0-beta1",
     "@trimble-oss/modus-icons": "1.15.0"
   },
   "devDependencies": {
@@ -36,11 +36,11 @@
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "htmlhint": "1.1.4",
-    "hugo-bin": "0.129.2",
-    "postcss": "8.4.41",
+    "hugo-bin": "0.130.1",
+    "postcss": "8.4.44",
     "postcss-cli": "11.0.0",
     "prettier": "3.3.3",
-    "stylelint": "16.8.2",
+    "stylelint": "16.9.0",
     "stylelint-config-standard-scss": "13.1.0",
     "stylelint-order": "6.0.4"
   },
