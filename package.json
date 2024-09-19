@@ -28,15 +28,15 @@
     "svgo": "npx svgo --folder=\"static/img/icons/\""
   },
   "dependencies": {
-    "@trimble-oss/modus-bootstrap": "2.0.0-beta1",
+    "@trimble-oss/modus-bootstrap": "2.0.2",
     "@trimble-oss/modus-icons": "1.15.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.20",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "htmlhint": "1.1.4",
-    "hugo-bin": "0.130.1",
+    "hugo-bin": "0.131.2",
     "postcss": "8.4.47",
     "postcss-cli": "11.0.0",
     "prettier": "3.3.3",
