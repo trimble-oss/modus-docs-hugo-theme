@@ -3,11 +3,11 @@
 }
 
 .sun-and-moon > :is(.moon, .sun) {
-  fill: var(--icon-fill);
+  fill: #fff;
 }
 
 .sun-and-moon > .sun-beams {
-  stroke: var(--icon-fill);
+  stroke: #fff;
   stroke-width: 2px;
 }
 
@@ -44,10 +44,6 @@
     }
   }
 
-  [data-bs-theme="dark"] .sun-and-moon > :is(.moon, .sun) {
-    fill: rgb(255, 255, 255);
-  }
-
   [data-bs-theme="dark"] .sun-and-moon > .sun {
     transform: scale(1.75);
     transition-duration: 0.25s;
@@ -66,8 +62,6 @@
 }
 
 .theme-toggle {
-  --icon-fill: rgb(0, 0, 0);
-
   aspect-ratio: 1;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;

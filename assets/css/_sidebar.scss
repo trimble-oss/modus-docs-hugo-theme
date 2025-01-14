@@ -40,7 +40,7 @@
 }
 
 .col-main {
-  max-width: calc(100vw - 81px);
+  width: 100%;
 }
 
 .collapse-horizontal.collapse:not(.show) {
@@ -57,7 +57,7 @@
 
 #sidebar.collapsing + div,
 #sidebar.show + div {
-  max-width: calc(100vw - 332px);
+  max-width: 100%;
 }
 
 .col-sidebar .sticky-offset {
