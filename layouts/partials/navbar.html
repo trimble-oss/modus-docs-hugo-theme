@@ -23,6 +23,8 @@
       {{ partial "navbar-search" . }}
       {{ end }}
 
+      {{ partial "navbar-theme-toggle" . }}
+
       {{- with .Site.Params.RemoveSearch -}}{{else}}
       <div class="dropdown">
         <button type="button" class="btn btn-lg btn-primary bg-transparent btn-icon-only"
