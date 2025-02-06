@@ -1,6 +1,6 @@
 {
   "name": "@trimble-oss/modus-docs-hugo-theme",
-  "version": "1.0.0-alpha28",
+  "version": "1.0.0-alpha29",
   "description": "A Documentation theme for Hugo built by Trimble",
   "homepage": "https://github.com/trimble-oss/modus-docs-hugo-theme",
   "bugs": {
@@ -36,11 +36,11 @@
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "htmlhint": "1.1.4",
-    "hugo-bin": "0.137.2",
+    "hugo-bin": "0.140.1",
     "postcss": "8.5.1",
     "postcss-cli": "11.0.0",
     "prettier": "3.4.2",
-    "stylelint": "16.13.1",
+    "stylelint": "16.14.1",
     "stylelint-config-standard-scss": "14.0.0",
     "stylelint-order": "6.0.4"
   },
