@@ -1,7 +1,3 @@
-.card-blog-brief {
-  transition: none;
-}
-
 #sidebar-menu {
   max-height: calc(100vh - 66px);
 }
@@ -49,10 +45,6 @@
 
 .row-main {
   min-height: calc(100dvh - 66px);
-}
-
-#sidebar.collapsing {
-  transition: none !important;
 }
 
 #sidebar.collapsing + div,
