@@ -1,6 +1,6 @@
 {
   "name": "@trimble-oss/modus-docs-hugo-theme",
-  "version": "1.0.0-alpha29",
+  "version": "1.0.0-alpha30",
   "description": "A Documentation theme for Hugo built by Trimble",
   "homepage": "https://github.com/trimble-oss/modus-docs-hugo-theme",
   "bugs": {
@@ -28,7 +28,7 @@
     "svgo": "npx svgo --folder=\"static/img/icons/\""
   },
   "dependencies": {
-    "@trimble-oss/modus-bootstrap": "^2.0.7",
+    "@trimble-oss/modus-bootstrap": "^2.0.8",
     "@trimble-oss/modus-icons": "^1.16.0"
   },
   "devDependencies": {
@@ -57,6 +57,6 @@
     "node": ">=18.0.0"
   },
   "volta": {
-    "node": "20.18.1"
+    "node": "20.18.2"
   }
 }
