@@ -42,4 +42,3 @@ jobs:
           VALIDATE_MARKDOWN: false
           VALIDATE_NATURAL_LANGUAGE: false
           VALIDATE_XML: false
-          VALIDATE_YAML: false
