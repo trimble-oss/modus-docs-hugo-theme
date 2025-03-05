@@ -17,6 +17,7 @@ params:
   expandAllAccordions: true # Optional - Expand all accordions on page load
   # disableThemeToggle: true # Optional - Disable theme toggle button
   RemoveSearch: false # Optional - Remove search functionality
+  includeModusIconFonts: true # Optional - Include Modus Icon Fonts
 
 disableKinds: ["sitemap", "taxonomy", "RSS", "terms"]
 pygmentsUseClasses: true
