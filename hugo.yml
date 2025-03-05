@@ -18,17 +18,13 @@ params:
   # disableThemeToggle: true # Optional - Disable theme toggle button
   RemoveSearch: false # Optional - Remove search functionality
 
-disableKinds: ["sitemap", "taxonomy", "RSS"]
+disableKinds: ["sitemap", "taxonomy", "RSS", "terms"]
 pygmentsUseClasses: true
 outputs:
   home: ["HTML", "JSON"]
 
 # https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings
 privacy:
-  googleAnalytics:
-    anonymizeIP: true
-  twitter:
-    enableDNT: true
   youtube:
     privacyEnhanced: true
 
