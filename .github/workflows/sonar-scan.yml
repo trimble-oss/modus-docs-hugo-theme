@@ -7,7 +7,6 @@ on:
   workflow_dispatch:
 
 env:
-  FORCE_COLOR: 2
   NODE: 18
 
 permissions:

@@ -16,9 +16,11 @@
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}?v{{- hugo.Version -}}">
 
 <!-- Load jQuery from CDN with fallback -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>');</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0-beta.2/dist/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-4.0.0-beta.2.min.js"><\/script>');</script>
+{{- if .Site.Params.includeModusIconFonts }}
 <link rel="stylesheet" href="{{- .Site.BaseURL -}}fonts/modus-icons.css">
+{{- end }}
 
 {{- if not .Site.Params.disableThemeToggle -}}
 <!-- Loads Dark Mode Toggle JS -->
