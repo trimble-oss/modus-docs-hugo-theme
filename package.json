@@ -34,7 +34,7 @@
   "devDependencies": {
     "autoprefixer": "10.4.20",
     "eslint": "8.57.1",
-    "eslint-config-prettier": "9.1.0",
+    "eslint-config-prettier": "10.1.2",
     "htmlhint": "1.1.4",
     "hugo-bin": "0.142.0",
     "postcss": "8.5.2",
