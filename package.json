@@ -32,7 +32,7 @@
     "@trimble-oss/modus-icons": "^1.16.0"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.20",
+    "autoprefixer": "10.4.21",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.5",
     "htmlhint": "1.1.4",
