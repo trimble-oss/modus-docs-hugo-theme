@@ -3,6 +3,7 @@
   "plugins": ["stylelint-order"],
   "rules": {
     "alpha-value-notation": null,
+    "color-function-alias-notation": null,
     "color-function-notation": null,
     "media-feature-range-notation": null,
     "no-descending-specificity": null,
