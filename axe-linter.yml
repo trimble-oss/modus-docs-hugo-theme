@@ -1,0 +1,8 @@
+---
+rules:
+  empty-heading: false
+  html-lang-valid: false
+  list: false
+  meta-charset-utf-8: false
+  meta-refresh: false
+  text-alternatives: false

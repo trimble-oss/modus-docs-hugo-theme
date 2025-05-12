@@ -15,7 +15,7 @@
   "scripts": {
     "build": "npx hugo",
     "lint": "npm run lint-css && npm run lint-html && npm run lint-js",
-    "lint-css": "stylelint \"assets/css/*.*\" --fix",
+    "lint-css": "stylelint \"assets/css/*.*\" --fix -f verbose",
     "lint-html": "htmlhint \"build/**/index.html\"",
     "lint-js": "eslint assets/js/*.js --fix",
     "lint-links": "npx linkinator ./public --recurse --silent",
@@ -34,14 +34,14 @@
   "devDependencies": {
     "autoprefixer": "10.4.20",
     "eslint": "8.57.1",
-    "eslint-config-prettier": "10.1.2",
+    "eslint-config-prettier": "10.1.5",
     "htmlhint": "1.1.4",
-    "hugo-bin": "0.142.0",
+    "hugo-bin": "0.144.2",
     "postcss": "8.5.3",
-    "postcss-cli": "11.0.0",
+    "postcss-cli": "11.0.1",
     "prettier": "3.5.3",
-    "stylelint": "16.15.0",
-    "stylelint-config-standard-scss": "14.0.0",
+    "stylelint": "16.19.1",
+    "stylelint-config-standard-scss": "15.0.0",
     "stylelint-order": "7.0.0"
   },
   "hugo-bin": {
@@ -54,9 +54,9 @@
     "static"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
   "volta": {
-    "node": "20.18.3"
+    "node": "22.0.0"
   }
 }
