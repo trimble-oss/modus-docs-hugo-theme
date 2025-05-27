@@ -36,7 +36,7 @@
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.5",
     "htmlhint": "1.1.4",
-    "hugo-bin": "0.144.3",
+    "hugo-bin": "0.144.5",
     "postcss": "8.5.3",
     "postcss-cli": "11.0.1",
     "prettier": "3.5.3",
